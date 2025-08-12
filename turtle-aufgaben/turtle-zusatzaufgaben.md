@@ -1,5 +1,11 @@
 # Turtle Zusatzaufgaben
 
+## Spirale
+![Linien](images/spirale.png)
+
+## Zickzack
+![Zickzack](images/zickzack.png)
+
 ## Farbige Blume
 
 **Tipp: So kannst du etwas enfärben**
@@ -13,3 +19,7 @@ turtle.closePath();
 ```
 
 ![Linien](images/farbige-blume.png)
+
+## Sei Kreativ!
+
+Denke dir selber Formen aus und lasse den Turtle zeichnen!

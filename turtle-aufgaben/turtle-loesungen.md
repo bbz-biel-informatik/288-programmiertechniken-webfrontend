@@ -303,6 +303,61 @@ for (let i = 0; i <= 10; i++) {
 ```
 
 ---
+
+## Zickzack
+
+**Screenshot:**  
+![Linien](images/zickzack.png)
+
+**Turtle-Code (Platzhalter):**
+
+```javascript
+turtle.setSpeed(1);
+
+function drawZickZack() {
+  for (let i = 0; i < 30; i++) {
+    turtle.forward(10);
+    turtle.right(90);
+    turtle.forward(10);
+    turtle.left(90);
+  }
+}
+
+turtle.right(45); // Das brauchen wir, da der Turtle zu Beginn nach Oben schaut.
+
+for (let i = 0; i < 20; i++) {
+  turtle.setPosition(0, i * 20);
+  drawZickZack();
+}
+```
+
+---
+
+## Spirale
+
+**Screenshot:**  
+![Linien](images/spirale.png)
+
+**Turtle-Code (Platzhalter):**
+
+```javascript
+// Spiral starting from canvas center (400x400 -> center at 200,200)
+turtle.setSpeed(1);
+
+function bow(size) {
+  for (let i = 0; i < 90; i++) {
+    turtle.forward(size);
+    turtle.right(2);
+  }
+}
+
+for (let i = 0; i < 100; i = i + 0.1) {
+  bow(i);
+}
+```
+
+---
+
 ## Farbige Blume
 
 **Screenshot:**  
@@ -314,42 +369,36 @@ for (let i = 0; i <= 10; i++) {
 turtle.setSpeed(1); // set speed
 turtle.setPosition(70, 320); // set position
 
-        turtle.setSpeed(1); // set speed
-        turtle.setPosition(70, 320); // set position
+turtle.setSpeed(1); // set speed
+turtle.setPosition(70, 320); // set position
 
-        /**
-         * Zeichnen eines Bogens
-         */
-        function bow() {
-          for (let i = 0; i < 180; i++) {
-            turtle.forward(2);
-            turtle.right(1);
-          }
-        }
+/**
+ * Zeichnen eines Bogens
+ */
+function bow() {
+  for (let i = 0; i < 180; i++) {
+    turtle.forward(2);
+    turtle.right(1);
+  }
+}
 
-        function flower() {
-          for (let i = 0; i < 6; i++) {
-            bow();
-            turtle.right(90);
-          }
-        }
+function flower() {
+  for (let i = 0; i < 6; i++) {
+    bow();
+    turtle.right(90);
+  }
+}
 
-        for (let i = 0; i <= 10; i++) {
-          turtle.beginPath();
-          turtle.setFillStyle(
-            "rgba(" +
-              (255 - i * 20) +
-              ", " +
-              i * 25 +
-              ", " +
-              (100 + i * 15) +
-              ", 0.8)"
-          );
-          flower(i * 10);
-          turtle.fill();
-          turtle.closePath();
-          turtle.right(10);
-        }
+for (let i = 0; i <= 10; i++) {
+  turtle.beginPath();
+  turtle.setFillStyle(
+    "rgba(" + (255 - i * 20) + ", " + i * 25 + ", " + (100 + i * 15) + ", 0.8)"
+  );
+  flower(i * 10);
+  turtle.fill();
+  turtle.closePath();
+  turtle.right(10);
+}
 ```
 
 ---
@@ -357,7 +406,6 @@ turtle.setPosition(70, 320); // set position
 # Zusatzaufgaben - Lösungen
 
 ## Farbige Blume
-
 
 ## Referenz
 
