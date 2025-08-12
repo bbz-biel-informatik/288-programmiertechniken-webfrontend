@@ -10,13 +10,48 @@ function updateRulersVisibility() {
   const top = document.getElementById("ruler-top");
   const left = document.getElementById("ruler-left");
   const corner = document.getElementById("ruler-corner");
-  const display = showRulers ? "" : "none";
-  if (top) top.style.display = display;
-  if (left) left.style.display = display;
-  if (corner) corner.style.display = display;
+  const grid = document.getElementById("grid-overlay");
+  const zIndex = showRulers ? "1" : "-10";
+  if (top) top.style.zIndex = zIndex;
+  if (left) left.style.zIndex = zIndex;
+  if (corner) corner.style.zIndex = zIndex;
+  if (grid) grid.style.zIndex = zIndex;
 
   if (showRulers) {
     drawRulers();
+    drawGrid();
+  }
+}
+
+function drawGrid() {
+  const grid = document.getElementById("grid-overlay");
+  if (!grid || !canvas) return;
+  grid.width = canvas.width;
+  grid.height = canvas.height;
+  const ctx = grid.getContext("2d");
+
+  ctx.clearRect(0, 0, grid.width, grid.height);
+
+  // Grid styles
+  const minor = 10; // 10px grid
+  const major = 50; // emphasize every 50px
+
+  for (let x = 0; x <= grid.width; x += minor) {
+    ctx.beginPath();
+    ctx.moveTo(x + 0.5, 0);
+    ctx.lineTo(x + 0.5, grid.height);
+    ctx.strokeStyle = x % major === 0 ? "#cbd5e1" : "#e2e8f0"; // slate-300 / slate-200
+    ctx.lineWidth = x % major === 0 ? 1 : 1;
+    ctx.stroke();
+  }
+
+  for (let y = 0; y <= grid.height; y += minor) {
+    ctx.beginPath();
+    ctx.moveTo(0, y + 0.5);
+    ctx.lineTo(grid.width, y + 0.5);
+    ctx.strokeStyle = y % major === 0 ? "#cbd5e1" : "#e2e8f0";
+    ctx.lineWidth = y % major === 0 ? 1 : 1;
+    ctx.stroke();
   }
 }
 

@@ -29,7 +29,7 @@ einfügen.
 
 ---
 
-## Beispiel 1: Dreieck
+## Dreieck
 
 **Beschreibung:** Ein gleichseitiges Dreieck.
 
@@ -49,10 +49,7 @@ turtle.right(120);
 
 ---
 
-## Beispiel 2: Zahnrad-Zackenkante
-
-**Beschreibung:** Eine wiederholte **hoch → rechts → runter → rechts**-Zacke, die wie eine Zahnradkante aussieht.  
-_(Dein Original hat drei Zacken; unten ist exakt dieselbe Sequenz.)_
+## Zahnrad
 
 **Turtle-Code:**
 
@@ -89,14 +86,11 @@ turtle.left(90);
 ```
 
 **Screenshot:**  
-![Zahnradkante](images/zahnrad.png)
-
-> Hinweis: In deinem HTML wurde zwischen den Beispielen `context.clearRect(...)` genutzt.  
-> Für einzelne Screenshots kannst du die **Canvas** vor jedem Beispiel leeren.
+![Zahnrad](images/zahnrad.png)
 
 ---
 
-## Beispiel 3: Stern
+## Stern
 
 **Beschreibung:** Ein 5-Zack-Stern (klassischer Pentagon-Stern, Innenwinkel-Turn 144°).
 
@@ -273,7 +267,7 @@ for (let i = 0; i <= 4; i++) {
 **Screenshot:**  
 ![Linien](images/funktionen-triangle+quadrat.png)
 
-**Turtle-Code (Platzhalter):**
+**Turtle-Code:**
 
 ```javascript
 turtle.setSpeed(1); // set speed
@@ -402,10 +396,6 @@ for (let i = 0; i <= 10; i++) {
 ```
 
 ---
-
-# Zusatzaufgaben - Lösungen
-
-## Farbige Blume
 
 ## Referenz
 

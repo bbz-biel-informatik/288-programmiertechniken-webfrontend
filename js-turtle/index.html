@@ -27,9 +27,8 @@
           id="toggle-rulers"
           type="checkbox"
           class="h-4 w-4 accent-purple-600"
-          checked
         />
-        <label for="toggle-rulers">Show rulers</label>
+        <label for="toggle-rulers">Gitter anzeigen</label>
       </div>
 
       <!-- Canvas + rulers wrapper -->
@@ -52,12 +51,24 @@
           class="bg-slate-50 rounded-l-md"
           width="24"
         ></canvas>
-        <canvas
-          class="border-4 border-purple-400 rounded-md bg-white"
-          width="400"
-          height="400"
-          id="real-turtle"
-        ></canvas>
+        <div
+          id="canvas-stack"
+          class="relative"
+          style="width: 400px; height: 400px"
+        >
+          <canvas
+            id="grid-overlay"
+            class="absolute inset-0 pointer-events-none z-10"
+            width="400"
+            height="400"
+          ></canvas>
+          <canvas
+            class="border-4 border-purple-400 rounded-md bg-white absolute inset-0"
+            width="400"
+            height="400"
+            id="real-turtle"
+          ></canvas>
+        </div>
       </div>
 
       <button
