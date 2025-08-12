@@ -4,7 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="https://unpkg.com/real-turtle"></script>
+    <script
+      async="false"
+      defer="false"
+      onload="init()"
+      type="text/javascript"
+      src="https://unpkg.com/real-turtle"
+    ></script>
     <title>Turtlegrafik</title>
   </head>
 
@@ -32,21 +38,28 @@
     </div>
 
     <script type="text/javascript">
-      const canvas = document.getElementById("real-turtle");
+      var canvas;
+      var turtle;
+
+      function init() {
+        canvas = document.getElementById("real-turtle");
+        turtle = new RealTurtle.default(canvas, { autoStart: true });
+      }
+
+      function clear() {
+        context = canvas.getContext("2d");
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        turtle = new RealTurtle.default(canvas, { autoStart: true });
+      }
 
       function start() {
-        const context = canvas.getContext("2d");
-        context.clearRect(0, 0, canvas.width, canvas.height);
+        clear();
+        turtle.setSpeed(1); // set speed
+        turtle.setPosition(70, 320); // set position
 
-        const turtle = new RealTurtle.default(canvas, { autoStart: true });
-
-        turtle.forward(100);
-        turtle.right(120);
-        turtle.forward(100);
-        turtle.right(120);
-        turtle.forward(100);
-        turtle.right(120);
-
+        turtle.forward(100); // move forward
+        turtle.right(90); // turn right
+        turtle.forward(100); // move forward
         // --> End of Turtle Code <--
         // Alle Commands: https://github.com/leonceaklin/real-turtle?tab=readme-ov-file#commands
       }
