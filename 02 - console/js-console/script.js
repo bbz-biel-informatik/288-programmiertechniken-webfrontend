@@ -32,7 +32,9 @@ init();
  * @returns
  */
 function getInput() {
-  return input.value;
+  const value = input.value;
+  input.value = ""; // Clear the input field after getting the value
+  return value;
 }
 
 /**
