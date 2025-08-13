@@ -1,10 +1,15 @@
 # Übungsaufgaben
 
+## Variablen und Operationen
+1. Schreibe ein Programm, das dich nach deinem Alter fragt, und dein Alter in 10 Jahren anzeigt​
+2. Schreibe ein Programm, das dich nach deinem Jahrgang fragt und dann dein Alter anzeigt​
+3. Schreibe ein Programm, das dich nach deinem Vornamen, dann nach deinem Nachnamen fragt und die beiden zusammen anzeigt​ //todo: change
+
+
 ## Bedingungen
 
-1. Schreibe ein Programm, das für eine eingegebene Schulnote (1–6) anzeigt, ob die Prüfung bestanden ist oder nicht.  
-2. Schreibe ein Programm, das den Benutzer 2 Zahlen eingeben lässt. Es soll dann anzeigen, ob die erste Zahl größer, kleiner oder gleich wie die zweite ist.  
-3. Schreibe ein Programm, das für eine eingegebene Zahl anzeigt, ob sie negativ, positiv oder Null ist.  
+1. Schreibe ein Programm, das für eine eingegebene Schulnote (1–6) anzeigt, ob die Prüfung bestanden ist oder nicht.   
+2. Schreibe ein Programm, das für eine eingegebene Zahl anzeigt, ob sie negativ, positiv oder Null ist.  
 
 ## Schleifen
 
