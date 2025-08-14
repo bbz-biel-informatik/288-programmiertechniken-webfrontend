@@ -1,29 +1,27 @@
-# 🎨 Turtle Aufgaben
-
----
-## Inhalt
+# Inhalt
 
 1. [Setup & Start](#setup--start)
-2. [Beispiel 1: Dreieck](#beispiel-1-dreieck)
-3. [Beispiel 2: Zahnrad-Zackenkante](#beispiel-2-zahnrad-zackenkante)
-4. [Beispiel 3: Stern](#beispiel-3-stern)
-5. [Beispiel 4: Funktionen – viele Quadrate](#beispiel-4-funktionen--viele-quadrate)
-6. [Beispiel 5: Linien (Platzhalter)](#beispiel-5-linien-platzhalter)
-7. [Referenz](#referenz)
+2. [Dreieck](#dreieck)
+3. [Zahnrad](#zahnrad)
+4. [Stern](#stern)
+5. [Funktionen - Quadrate](#funktionen---quadrate)
+6. [Funktionen - Triangles](#funktionen---triangles)
+7. [Funktionen - Triangle + Quadrat](#funktionen---triangle--quadrat)
+8. [Schleifen - Zwei Kreise](#schleifen---zwei-kreise)
+9. [Schleifen - Blume](#schleifen---blume)
+10. [Zickzack](#zickzack)
+11. [Spirale](#spirale)
+12. [Farbige Blume](#farbige-blume)
+13. [Sei Kreativ!](#sei-kreativ)
 
 ---
 
 ## Setup & Start
 
-In deinem HTML wird die Zeichnung in der `start()`-Funktion erzeugt.  
-
-```js
-// --> Start of Turtle Code <--
-/* ...hier einfügen... */
-// --> End of Turtle Code <--
-```
-
-einfügen.
+1. Lade das zip file (js-turtle.zip) herunter und entpacke es.
+2. Öffne den Ordner im VS Code
+3. Lies dir das readme durch.
+4. Löse die Aufgaben.
 
 ---
 
@@ -62,35 +60,28 @@ einfügen.
 ## Funktionen - triangles
 
 **Screenshot:**  
-![Linien](images/funktionen-triangles.png)
+![Triangles](images/funktionen-triangles.png)
 
 ---
 
 ## Funktionen - triangle + quadrat
 
 **Screenshot:**  
-![Linien](images/funktionen-triangle+quadrat.png)
+![Triangle + Quadrat](images/funktionen-triangle+quadrat.png)
 
 ---
 
 ## Schleifen - Zwei Kreise
 
 **Screenshot:**  
-![Linien](images/funktionen-triangle+quadrat.png)
+![Zwei Kreise](images/schleifen-zwei-kreise.png)
 
 ---
 
 ## Schleifen - Blume
 
 **Screenshot:**  
-![Linien](images/funktionen-triangle+quadrat.png)
-
----
-
-## Schleifen - Blume
-
-**Screenshot:**  
-![Linien](images/funktionen-triangle+quadrat.png)
+![Blume](images/schleifen-blume.png)
 
 ---
 
@@ -104,14 +95,14 @@ einfügen.
 ## Spirale
 
 **Screenshot:**  
-![Linien](images/spirale.png)
+![Spirale](images/spirale.png)
 
 ---
 
 ## Farbige Blume
 
 **Screenshot:**  
-![Linien](images/farbige-blume.png)
+![Farbige Blume](images/farbige-blume.png)
 
 ---
 
@@ -133,7 +124,7 @@ turtle.fill();
 turtle.closePath();
 ```
 
-![Linien](images/farbige-blume.png)
+![Farbige Blume](images/farbige-blume.png)
 
 ## Sei Kreativ!
 
