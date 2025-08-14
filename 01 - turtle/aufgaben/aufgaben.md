@@ -30,14 +30,14 @@
 **Beschreibung:** Ein gleichseitiges Dreieck.
 
 **Screenshot:**  
-![Dreieck](images/dreieck.png)
+<img src="images/dreieck.png" alt="Dreieck" width="200px">
 
 ---
 
 ## Zahnrad
 
 **Screenshot:**  
-![Zahnrad](images/zahnrad.png)
+<img src="images/zahnrad.png" alt="Zahnrad" width="200px">
 
 ---
 
@@ -46,56 +46,56 @@
 **Beschreibung:** Ein 5-Zack-Stern (klassischer Pentagon-Stern, Innenwinkel-Turn 144°).
 
 **Screenshot:**  
-![Stern](images/stern.png)
+<img src="images/stern.png" alt="Stern" width="200px">
 
 ---
 
 ## Funktionen - quadrate
 
 **Screenshot:**  
-![Quadrate](images/funktionen-quadrate.png)
+<img src="images/funktionen-quadrate.png" alt="Quadrate" width="200px">
 
 ---
 
 ## Funktionen - triangles
 
 **Screenshot:**  
-![Triangles](images/funktionen-triangles.png)
+<img src="images/funktionen-triangles.png" alt="Triangles" width="200px">
 
 ---
 
 ## Funktionen - triangle + quadrat
 
 **Screenshot:**  
-![Triangle + Quadrat](images/funktionen-triangle+quadrat.png)
+<img src="images/funktionen-triangle+quadrat.png" alt="Triangle + Quadrat" width="200px">
 
 ---
 
 ## Schleifen - Zwei Kreise
 
 **Screenshot:**  
-![Zwei Kreise](images/schleifen-zwei-kreise.png)
+<img src="images/schleifen-zwei-kreise.png" alt="Zwei Kreise" width="200px">
 
 ---
 
 ## Schleifen - Blume
 
 **Screenshot:**  
-![Blume](images/schleifen-blume.png)
+<img src="images/schleifen-blume.png" alt="Blume" width="200px">
 
 ---
 
 ## Zickzack
 
 **Screenshot:**  
-![Linien](images/zickzack.png)
+<img src="images/zickzack.png" alt="Zickzack" width="200px">
 
 ---
 
 ## Spirale
 
 **Screenshot:**  
-![Spirale](images/spirale.png)
+<img src="images/spirale.png" alt="Spirale" width="200px">
 
 ---
 
@@ -112,7 +112,7 @@ turtle.closePath();
 ```
 
 **Screenshot:**  
-![Farbige Blume](images/farbige-blume.png)
+<img src="images/farbige-blume.png" alt="Farbige Blume" width="200px">
 
 ---
 
