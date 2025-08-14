@@ -101,19 +101,6 @@
 
 ## Farbige Blume
 
-**Screenshot:**  
-![Farbige Blume](images/farbige-blume.png)
-
----
-
-## Referenz
-
-- **Real Turtle (JS):** https://github.com/leonceaklin/real-turtle#commands
-- Nützliche Befehle: `forward`, `right`, `left`, `penUp`, `penDown`, `goTo`, `setSpeed`
-
-
-## Farbige Blume
-
 **Tipp: So kannst du etwas enfärben**
 
 ```javascript
@@ -124,7 +111,16 @@ turtle.fill();
 turtle.closePath();
 ```
 
+**Screenshot:**  
 ![Farbige Blume](images/farbige-blume.png)
+
+---
+
+## Referenz
+
+- **Real Turtle (JS):** https://github.com/leonceaklin/real-turtle#commands
+- Nützliche Befehle: `forward`, `right`, `left`, `penUp`, `penDown`, `goTo`, `setSpeed`
+
 
 ## Sei Kreativ!
 
