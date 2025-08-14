@@ -12,7 +12,8 @@
 10. [Zickzack](#zickzack)
 11. [Spirale](#spirale)
 12. [Farbige Blume](#farbige-blume)
-13. [Sei Kreativ!](#sei-kreativ)
+13. [Circle of circles](#circle-of-circles)
+14. [Sei Kreativ!](#sei-kreativ)
 
 ---
 
@@ -115,6 +116,13 @@ turtle.closePath();
 <img src="images/farbige-blume.png" alt="Farbige Blume" width="200px">
 
 ---
+
+---
+
+## Circle of circles
+
+**Screenshot:**  
+<img src="images/circle-of-circle.png" alt="Spirale" width="200px">
 
 ## Referenz
 
