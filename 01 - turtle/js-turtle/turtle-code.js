@@ -5,19 +5,14 @@
 function start(turtle) {
   // --> Turtle code here <--
 
-  turtle.setSpeed(10); // Set the speed of the turtle
-  function circle(size) {
-    for (let i = 0; i < 360; i++) {
-      turtle.forward(size);
-      turtle.right(1);
-    }
-  }
-
-  for (let i = 0; i < 36; i++) {
-    circle(1);
-    turtle.forward(3);
-    turtle.left(10);
-  }
+  turtle.setSpeed(0.9); // set speed
+  turtle.forward(100); // move forward 100 pixels
+  turtle.right(90);
+  turtle.forward(100); // move forward 100 pixels
+  turtle.right(90);
+  turtle.forward(100); // move forward 100 pixels
+  turtle.right(90);
+  turtle.forward(100); // move forward 100 pixels
 
   // --> End of Turtle Code <--
   // Alle Commands: https://github.com/leonceaklin/real-turtle?tab=readme-ov-file#commands
