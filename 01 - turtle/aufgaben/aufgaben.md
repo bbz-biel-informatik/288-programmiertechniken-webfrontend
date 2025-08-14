@@ -18,7 +18,7 @@
 
 ## Setup & Start
 
-1. Lade das zip file [js-turtle.zip](../js-turtle.zip) herunter und entpacke es.
+1. Lade das zip file <a href="../js-turtle.zip" download>Click to Download</a> [js-turtle.zip](../js-turtle.zip) herunter und entpacke es.
 2. Öffne den Ordner im VS Code
 3. Lies dir das readme durch.
 4. Löse die Aufgaben.
