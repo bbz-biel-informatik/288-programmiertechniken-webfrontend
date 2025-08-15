@@ -1,5 +1,12 @@
 # Übungsaufgaben
 
+## Setup & Start
+
+1. Lade das zip file  [js-console.zip](https://github.com/bbz-biel-informatik/288-programmiertechniken-webfrontend/raw/refs/heads/master/02%20-%20console/js-console.zip) herunter und entpacke es.
+2. Öffne den Ordner im VS Code
+3. Lies dir das readme durch.
+4. Löse die Aufgaben.
+
 ## Variablen und Operationen
 1. Schreibe ein Programm, das dich nach deinem Alter fragt, und dein Alter in 10 Jahren anzeigt​
 2. Schreibe ein Programm, das dich nach deinem Jahrgang fragt und dann dein Alter anzeigt​
