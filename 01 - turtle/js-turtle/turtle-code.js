@@ -2,18 +2,69 @@
 
 // This function is called by the environment when you click "Run Turtle"
 // You get the `turtle` object to draw with.
+//
+//
+function stern() {
+  turtle.forward(100);
+  turtle.right(144);
+  turtle.forward(100);
+  turtle.right(144);
+  turtle.forward(100);
+  turtle.right(144);
+  turtle.forward(100);
+  turtle.right(144);
+  turtle.forward(100);
+  turtle.right(144);
+  turtle.forward(100);
+  turtle.right(144);
+}
+
+function triangle() {
+  turtle.forward(100);
+  turtle.right(120);
+  turtle.forward(100);
+  turtle.right(120);
+  turtle.forward(100);
+  turtle.right(120);
+}
+
+function quadrat(size) {
+  turtle.forward(size);
+  turtle.right(90);
+  turtle.forward(size);
+  turtle.right(90);
+  turtle.forward(size);
+  turtle.right(90);
+  turtle.forward(size);
+  turtle.right(90);
+}
+
+function halbKreis() {
+  for (let i = 0; i < 180; i++) {
+    turtle.forward(1);
+    turtle.right(1);
+  }
+}
+
+function halbKreis() {
+  for (let i = 0; i < 180; i++) {
+    turtle.forward(2);
+    turtle.right(1);
+  }
+}
+
+function flower() {
+  for (let i = 0; i < 6; i++) {
+    halbKreis();
+    turtle.right(90);
+  }
+}
+
 function start(turtle) {
-  // --> Turtle code here <--
+  turtle.setSpeed(1);
 
-  turtle.setSpeed(0.9); // set speed
-  turtle.forward(100); // move forward 100 pixels
-  turtle.right(90);
-  turtle.forward(100); // move forward 100 pixels
-  turtle.right(90);
-  turtle.forward(100); // move forward 100 pixels
-  turtle.right(90);
-  turtle.forward(100); // move forward 100 pixels
-
-  // --> End of Turtle Code <--
-  // Alle Commands: https://github.com/leonceaklin/real-turtle?tab=readme-ov-file#commands
+  for (let i = 0; i <= 10; i++) {
+    flower();
+    turtle.right(10);
+  }
 }

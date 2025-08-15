@@ -72,10 +72,10 @@
 
 ---
 
-## Schleifen - Zwei Kreise
+## Schleifen - Kreis
 
 **Screenshot:**  
-<img src="images/schleifen-zwei-kreise.png" alt="Zwei Kreise" width="200px">
+<img src="images/schleifen-kreis.png" alt="Kreis" width="200px">
 
 ---
 
@@ -83,6 +83,13 @@
 
 **Screenshot:**  
 <img src="images/schleifen-blume.png" alt="Blume" width="200px">
+
+---
+
+## Schleifen - Mandala
+
+**Screenshot:**  
+<img src="images/schleifen-mandala.png" alt="Blume" width="200px">
 
 ---
 
