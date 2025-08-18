@@ -16,6 +16,13 @@ function init() {
  */
 function buttonClicked() {
   const text = getInput();
+  const number = parseInt(text);
+
+  let letzteNummer = 1;
+  let vorletzteNummer = 1;
+  for (let i = 0; i < number; i++) {
+    print(letzteNummer + vorletzteNummer);
+  }
 
   // do something here
 
