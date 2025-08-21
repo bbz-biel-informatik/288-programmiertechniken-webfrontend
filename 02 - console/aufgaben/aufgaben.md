@@ -44,19 +44,22 @@ Zahl fragt und dann die entsprechende Reihe angibt. (bis 100)
 1. Schreibe ein Programm, das für eine eingegebene Schulnote (1–6) anzeigt, ob die Prüfung bestanden ist oder nicht.   
 2. Schreibe ein Programm, das für eine eingegebene Zahl anzeigt, ob sie negativ, positiv oder Null ist.
 3. Outfit-o-mat: Schreibe ein Programm, wo du die Temperatur eingeben kannst. Der Automat soll dir dann vorschlagen, welches Outfit sinn macht. Du kannst selber kreativ sein oder dem Vorschlg folgen:
-
+```
 Kleiner als 0 Grad -> Sicher Handschuhe! 🧤
 Zwischen 0 und 10 Grad -> Ich würde eine warme Jacke anziehen.🧥
 Zwischen 10 und 20 Grad -> Sicher noch lange Hosen. 👖
 Zwischen 20 und 30 Grad -> Sonnenbrille und tshirt. 😎
 Mehr als 30 Grad -> Tshirt, kurze Hose und ein aperol spritz! 🍹
+```
 
 4. Zauberwort
+```
 Input: ein Wunsch (z. B. kann ich gehen bitte).
 Wenn das Wort "bitte" drin ist -> „Klar! 🫶“
 Wenn nicht -> "Wie ist das Zauberwort?"
 
 Tipp: https://www.w3schools.com/js/js_string_search.asp#mark_includes
+```
 
 
 ## 3 - Schleifen und Bedingungen
