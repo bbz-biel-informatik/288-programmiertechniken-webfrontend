@@ -16,12 +16,13 @@ https://www.w3schools.com/jsref/jsref_obj_string.asp
 2. Schreibe ein Programm, das dich nach deinem Jahrgang fragt und dann dein Alter anzeigt​
 3. Schreibe ein Programm, welches nach dem Namen fragt und dann schreibt:<br>
 Hallo, name
-4. Schreibe ein Programm, welches nach dem Radius fragt und den Umfang eines Kreises ausgibt.
-<br>
+4. Schreibe ein Programm, welches nach dem Radius fragt und den Umfang eines Kreises ausgibt.<br>
 Tipp: Die Formel ist U = 2 * pi * r;
 5. Schreibe ein Programm, welches nach einer Zahl fragt und dann so oft "Hello, world!" ausgibt
 6. Schreibe ein Programm, welches nach einer
 Zahl fragt und dann die entsprechende Reihe angibt. (bis 100)
+7. Schreibe ein Programm, welches von der Eingabe die Anzahl Zeichen berechnet.<br>
+Tipp: https://www.w3schools.com/js/js_string_methods.asp#mark_length
 
 ```javascript
 // 3er Reihe:
