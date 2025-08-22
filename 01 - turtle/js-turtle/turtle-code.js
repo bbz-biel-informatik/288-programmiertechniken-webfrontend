@@ -53,18 +53,15 @@ function halbKreis() {
   }
 }
 
-function flower() {
-  for (let i = 0; i < 6; i++) {
-    halbKreis();
-    turtle.right(90);
-  }
+function triangle(size) {
+  turtle.forward(size);
+  turtle.right(120);
+  turtle.forward(size);
+  turtle.right(120);
+  turtle.forward(size);
+  turtle.right(120);
 }
 
 function start(turtle) {
   turtle.setSpeed(1);
-
-  for (let i = 0; i <= 10; i++) {
-    flower();
-    turtle.right(10);
-  }
 }
