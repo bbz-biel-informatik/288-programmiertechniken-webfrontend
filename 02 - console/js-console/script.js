@@ -1,26 +1,30 @@
-/**
- * Wird nach dem Laden der Seite aufgerufen.
- * Hier kannst du z.b zu Beginn etwas ausgeben.
- */
 function init() {
-  print("Welcome to the console!");
-  // do something here
+  print("Geben Sie einen Wunsch ein");
 }
 
-/**
- * Wird aufgerufen, wenn der Button geklickt wird.
- */
 function buttonClicked() {
-  const text = getInput();
-  const number = parseInt(text);
-
-  let letzteNummer = 1;
-  let vorletzteNummer = 1;
-  for (let i = 0; i < number; i++) {
-    print(letzteNummer + vorletzteNummer);
+  /*
+  let temperatur = parseInt(getInput());
+  let outfit = "";
+  if (temperatur < 0) {
+    outfit = "Sicher handschuhe!";
+  } else if (temperatur <= 10) {
+    outfit = "Sicher warme jacke anziehen!";
+  } else if (temperatur <= 20) {
+    outfit = "Sicher lange hose anziehen";
+  } else if (temperatur < 31) {
+    outfit = "Sonnenbrille und tshirt. 😎";
+  } else {
+    outfit = "Tshirt, kurze Hose und ein aperol spritz! 🍹";
   }
+  print(outfit);
+  */
 
-  // do something here
-
-  print("You entered: " + text);
+  let text = getInput();
+  text = text.replace("a", "anafa");
+  text = text.replace("e", "enefe");
+  text = text.replace("i", "inifi");
+  text = text.replace("o", "onofo");
+  text = text.replace("u", "unufu");
+  print(text);
 }
