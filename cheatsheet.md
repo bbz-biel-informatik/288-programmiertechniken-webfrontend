@@ -139,6 +139,10 @@ document.addEventListener("keydown", function(event) {
     console.log("you pressed s");
   }
 })
+
+// Element löschen
+const myImage = document.querySelector("#myImage");
+myImage.remove();
 ```
 
 
