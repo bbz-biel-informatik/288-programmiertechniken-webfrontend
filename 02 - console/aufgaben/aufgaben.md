@@ -20,10 +20,7 @@ Hallo, name
 Tipp: Die Formel ist U = 2 * pi * r;
 5. Schreibe ein Programm, welches nach einer Zahl fragt und dann so oft "Hello, world!" ausgibt
 6. Schreibe ein Programm, welches nach einer
-Zahl fragt und dann die entsprechende Reihe angibt. (bis 100)
-7. Schreibe ein Programm, welches von der Eingabe die Anzahl Zeichen berechnet.<br>
-Tipp: https://www.w3schools.com/js/js_string_methods.asp#mark_length
-
+Zahl fragt und dann die entsprechende Reihe angibt.
 ```javascript
 // 3er Reihe:
 // 3
@@ -33,6 +30,8 @@ Tipp: https://www.w3schools.com/js/js_string_methods.asp#mark_length
 // 16
 // ...
 ```
+7. Schreibe ein Programm, welches von der Eingabe die Anzahl Zeichen berechnet.<br>
+Tipp: https://www.w3schools.com/js/js_string_methods.asp#mark_length
 
 ## 2 - Bedingungen
 

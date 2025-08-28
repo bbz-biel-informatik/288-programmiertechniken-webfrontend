@@ -1,29 +1,27 @@
-function triangle(size) {
+function square(size) {
   turtle.forward(size);
-  turtle.right(120);
+  turtle.right(90);
   turtle.forward(size);
-  turtle.right(120);
+  turtle.right(90);
   turtle.forward(size);
-  turtle.right(120);
-}
-
-function circle() {
-  for (let i = 1; i <= 360; i++) {
-    turtle.right(1);
-    turtle.forward(1);
-  }
+  turtle.right(90);
+  turtle.forward(size);
+  turtle.right(90);
 }
 
 function start(turtle) {
   turtle.setSpeed(1);
 
-  // 36x
-  for (let i = 1; i <= 10; i++) {
-    // 1
-    // 2
-    // 3
-    circle();
-    turtle.forward(3);
-    turtle.left(10);
-  }
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.right(60);
 }

@@ -33,3 +33,6 @@ document.addEventListener("keydown", function(event) {
 const audio = new Audio("chanty.mp3");
 audio.play();
 ```
+
+## Zusatz
+Öffne das turtle projekt, welches wir in der ersten Lektion hatten. Schaffst du es, den Turtle mit den Pfeiltasten zu bewegen?
