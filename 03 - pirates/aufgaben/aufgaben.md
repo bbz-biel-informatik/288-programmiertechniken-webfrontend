@@ -50,5 +50,24 @@ setInterval(() => {
 
 **5** - Schaffst du folgendes: Wenn das Schiff zerstört wird, soll zusätzlich ein Knall abgespielt werden.
 
+**6** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss.
+
+**7** - Challenge: Schaffst du es, eine alert() Meldung mit der Anzahl Sekunden anzugeben, sobald dein steuerbares Schiff beim zweiten Schiff angekommen ist?
+
+```javascript
+// Tipp
+
+const myShip = document.querySelector("#myShip");
+const enemy = document.querySelector("#enemy");
+
+function checkCollision(){
+  if( parseInt(myShip.style.top) - parseInt(enemy.style.top) < 10 &&
+      parseInt(myShip.style.left) - parseInt(enemy.style.left) < 10)
+    {
+      console.log("collide");
+    }
+}
+```
+
 ## Zusatz
 Öffne das turtle projekt, welches wir in der ersten Lektion hatten. Schaffst du es, den Turtle mit den Pfeiltasten zu bewegen?
