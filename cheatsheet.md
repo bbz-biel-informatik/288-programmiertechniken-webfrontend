@@ -143,6 +143,10 @@ document.addEventListener("keydown", function(event) {
 // Element löschen
 const myImage = document.querySelector("#myImage");
 myImage.remove();
+
+// Text verändern
+const someElement = document.querySelector("#element");
+someElement.innerText = "Some text";
 ```
 
 
