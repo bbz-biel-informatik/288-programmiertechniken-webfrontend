@@ -9,8 +9,8 @@
 - setze die Position auf links: 100px / rechts: 100px
 - Mache, dass das Bild position: absolute hat. (Damit können wir dessen Position verändern.)
 5. Mithilfe von Javascript, setze die Hintergrundfarbe des <body> tags auf Blau.
-6. Füge ein leeres <div></div> Element hinzu und gib ihm die ID "score"
-7. Finde das leere Element mit Javascript und füge den Text "0 Punkte" ein. Mit folgendem Befehl kannst du einen Text einfügen:
+6. Füge ein leeres <div></div> Element hinzu und gib ihm die ID "time"
+7. Finde das leere Element mit Javascript und füge den Text "0" ein. Mit folgendem Befehl kannst du einen Text einfügen:
 ```javascript
 const myDiv = document.querySelector("#myDiv");
 myDiv.innerText = "Some text";
@@ -33,6 +33,20 @@ document.addEventListener("keydown", function(event) {
 const audio = new Audio("chanty.mp3");
 audio.play();
 ```
+3. Erstelle einen Zähler, welcher das Element mit der ID "time" alle 1 Sekunde nach oben zählt.
+Tipp:
+```javascript
+let seconds = 0;
+
+setInterval(() => {
+  // Das hier passiert nun alle Sekunden
+  seconds++;
+}, 1000)
+```
+
+4. Schaffst du folgendes: Wenn dieselbe Taste 3x hintereinander geklickt wird, wird das Schiff zerstört! Zum Beispiel 3x (Pfeil nach Oben) oder 3x (Pfeil nach Unten).
+
+5. Schaffst du folgendes: Wenn das Schiff zerstört wird, soll zusätzlich ein Knall abgespielt werden.
 
 ## Zusatz
 Öffne das turtle projekt, welches wir in der ersten Lektion hatten. Schaffst du es, den Turtle mit den Pfeiltasten zu bewegen?
