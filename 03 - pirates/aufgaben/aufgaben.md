@@ -50,7 +50,7 @@ setInterval(() => {
 
 **5** - Schaffst du folgendes: Wenn das Schiff zerstört wird, soll zusätzlich ein Knall abgespielt werden.
 
-**6** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss.
+**6** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss. Nenne es "enemy", setze die Position und die Grösse gleich wie beim anderen Schiff.
 
 **7** - Challenge: Schaffst du es, eine alert() Meldung mit der Anzahl Sekunden anzugeben, sobald dein steuerbares Schiff beim zweiten Schiff angekommen ist?
 
@@ -60,12 +60,14 @@ setInterval(() => {
 const myShip = document.querySelector("#myShip");
 const enemy = document.querySelector("#enemy");
 
-function checkCollision(){
-  if( parseInt(myShip.style.top) - parseInt(enemy.style.top) < 50 &&
-      parseInt(myShip.style.left) - parseInt(enemy.style.left) < 50)
-    {
-      console.log("collide");
-    }
+function checkCollision() {
+  console.log(parseInt(myShip.style.left) - parseInt(enemy.style.left));
+  if (
+    Math.abs(parseInt(myShip.style.top) - parseInt(enemy.style.top)) < 50 &&
+    Math.abs(parseInt(myShip.style.left) - parseInt(enemy.style.left)) < 50
+  ) {
+    console.log("collide");
+  }
 }
 ```
 
