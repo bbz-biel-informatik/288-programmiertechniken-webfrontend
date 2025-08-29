@@ -98,6 +98,17 @@ Gegeben ist die folgende HTML Struktur. Schreiben Sie Javascript Code, welcher b
 </html>
 ```
 
+## 9 DOM Manipulation
+Gegeben ist die folgende HTML Struktur. Schreiben Sie Javascript Code, welcher beim Hover auf das Bild die Grösse verändert auf "230px X 230px".
+
+```html
+<html>
+    <body>
+        <img id="my-image" style="height: 200px; width: 200px;" src="https://example.com" />
+    </body>
+</html>
+```
+
 ## 9 Variablen
 Nennen Sie drei verschiedene Datentypen, die eine Variable haben kann.
 
