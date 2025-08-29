@@ -46,13 +46,11 @@ setInterval(() => {
 }, 1000)
 ```
 
-**4** - Schaffst du folgendes: Wenn dieselbe Taste 3x hintereinander geklickt wird, wird das Schiff zerstört! Zum Beispiel 3x (Pfeil nach Oben) oder 3x (Pfeil nach Unten).
+**4** - Schaffst du folgendes: Wenn das Schiff zerstört wird, soll zusätzlich ein Knall abgespielt werden.
 
-**5** - Schaffst du folgendes: Wenn das Schiff zerstört wird, soll zusätzlich ein Knall abgespielt werden.
+**5** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss. Nenne es "enemy", setze die Position und die Grösse gleich wie beim anderen Schiff.
 
-**6** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss. Nenne es "enemy", setze die Position und die Grösse gleich wie beim anderen Schiff.
-
-**7** - Challenge: Schaffst du es, eine alert() Meldung mit der Anzahl Sekunden anzugeben, sobald dein steuerbares Schiff beim zweiten Schiff angekommen ist?
+**6** - Challenge: Schaffst du es, eine alert() Meldung mit der Anzahl Sekunden anzugeben, sobald dein steuerbares Schiff beim zweiten Schiff angekommen ist?
 
 ```javascript
 // Tipp
