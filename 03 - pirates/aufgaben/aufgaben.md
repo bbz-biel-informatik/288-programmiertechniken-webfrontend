@@ -46,11 +46,9 @@ setInterval(() => {
 }, 1000)
 ```
 
-**4** - Schaffst du folgendes: Wenn das Schiff zerstört wird, soll zusätzlich ein Knall abgespielt werden.
+**4** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss. Nenne es "enemy", setze die Position und die Grösse gleich wie beim anderen Schiff.
 
-**5** - Suche online nach einem weiteren Schiff (Das anders aussieht), setze es ins Dokument ein und positioniere es ca. unten rechts. Du kannst das gleich machen wie bereits beim ersten Schiff. Beachte, dass die Position "absolute" sein muss. Nenne es "enemy", setze die Position und die Grösse gleich wie beim anderen Schiff.
-
-**6** - Challenge: Schaffst du es, eine alert() Meldung mit der Anzahl Sekunden anzugeben, sobald dein steuerbares Schiff beim zweiten Schiff angekommen ist?
+**5** - Challenge: Schaffst du es, eine alert() Meldung mit der Anzahl Sekunden anzugeben, sobald dein steuerbares Schiff beim zweiten Schiff angekommen ist?
 
 ```javascript
 // Tipp
