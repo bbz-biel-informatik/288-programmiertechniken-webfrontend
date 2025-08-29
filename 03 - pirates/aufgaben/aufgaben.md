@@ -9,7 +9,7 @@
 - setze die Position auf links: 100px / top: 100px
 - Mache, dass das Bild position: absolute hat. (Damit können wir dessen Position verändern.)
 
-**5** - Mithilfe von Javascript, setze die Hintergrundfarbe des <body> tags auf Blau.<br>
+**5** - Mithilfe von Javascript, setze die Hintergrundfarbe des `<body>` tags auf Blau.<br>
 **6** - Füge ein leeres
 `<div></div>`
 Element hinzu und gib ihm die ID "time"<br>
@@ -74,7 +74,10 @@ function checkCollision() {
 * Beim Klick auf den Knopf sollen die beiden Inputfelder addiert werden und das Resultat im Tag mit der ID "result" angegeben werden.
 
 Quelle:
-https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input
+
+
+-field-using-javascript
 
 
 
