@@ -61,8 +61,8 @@ const myShip = document.querySelector("#myShip");
 const enemy = document.querySelector("#enemy");
 
 function checkCollision(){
-  if( parseInt(myShip.style.top) - parseInt(enemy.style.top) < 10 &&
-      parseInt(myShip.style.left) - parseInt(enemy.style.left) < 10)
+  if( parseInt(myShip.style.top) - parseInt(enemy.style.top) < 50 &&
+      parseInt(myShip.style.left) - parseInt(enemy.style.left) < 50)
     {
       console.log("collide");
     }
