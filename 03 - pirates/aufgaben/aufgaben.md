@@ -6,7 +6,7 @@
 **3** - Finde ein Bild eines Piratenschiffs online und platziere das Bild auf der Webseite. Gib dem Bild eine ID (myShip).<br>
 **4** - Mithilfe von Javascript,
 - setze die Grösse auf 100x100 pixel
-- setze die Position auf links: 100px / rechts: 100px
+- setze die Position auf links: 100px / top: 100px
 - Mache, dass das Bild position: absolute hat. (Damit können wir dessen Position verändern.)
 
 **5** - Mithilfe von Javascript, setze die Hintergrundfarbe des <body> tags auf Blau.<br>
