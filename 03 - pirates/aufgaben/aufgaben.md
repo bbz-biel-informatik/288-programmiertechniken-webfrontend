@@ -67,5 +67,17 @@ function checkCollision() {
 }
 ```
 
-## Zusatz
+## Zusatz 1
+* Erstellen Sie ein neues Projekt mit HTML und Javascript.
+* Fügen Sie im HTML zwei Inputfelder und einen Knopf hinzu.
+* Fügen Sie ebenfalls ein leeres `<div></div>` hinzu und gib ihm die ID "result".
+* Beim Klick auf den Knopf sollen die beiden Inputfelder addiert werden und das Resultat im Tag mit der ID "result" angegeben werden.
+
+Quelle:
+https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+
+
+
+
+## Zusatz 2
 Öffne das turtle projekt, welches wir in der ersten Lektion hatten. Schaffst du es, den Turtle mit den Pfeiltasten zu bewegen?
