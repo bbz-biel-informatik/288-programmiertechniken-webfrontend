@@ -55,6 +55,7 @@ for(let i = 0; i < 7; i++) {
 ## 6 if / else
 Ein Passwort soll mindestens 12 Zeichen haben. Wenn nicht, soll eine Errormeldung erscheinen. Schreiben Sie den Code mit den nachfolgenden Hilfestellungen.
 
+### Hilfestellung
 ```javascript
 const myString = "Hello, World";
 // die .length Funktion gibt die Länge des Strings an.
@@ -62,6 +63,12 @@ const length = myString.length; // 12
 
 // die alert() Funktion gibt eine Warnung aus.
 alert("Hello, world!");
+```
+
+### Anfangscode
+```javascript
+const password = "my-super-strong-password"
+// ...
 ```
 
 ## 7 DOM Manipulation

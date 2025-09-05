@@ -1,10 +1,15 @@
-.title {
-    font-size: 1.5em;
-    color: rgb(0, 0, 255)
+#title {
+    font-size: 3em;
+    color: rgb(0, 0, 255);
 }
 
-.my-image {
-    position: absolute;
+.quote {
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+#my-image {
     padding: 20px;
     background-color: green;
     width: 300px;

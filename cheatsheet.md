@@ -118,7 +118,10 @@ if(city != "stockholm") // city ist NICHT stockholm
 ## DOM (HTML) Manipulation
 ```javascript
 // Gib mir das Objekt mit der id "image"
-const myImage = document.querySelector("#myImage");
+const myImage = document.querySelector("#image");
+
+// Gib mir das Objekt mit der id "image" - andere Methode
+const myImage = document.getElementById("image")
 
 // Setzte den Hintergrund des Bildes auf rot
 myImage.style.backgroundColor = "red";
