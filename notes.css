@@ -21,3 +21,18 @@
     height: 100px;
     background-color: green;
 }
+.player {
+    width: 100px;
+    position: fixed;
+}
+
+.enemy3 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+}
+.playground {
+    height: 500px;
+    width: 500px;
+}
