@@ -8,7 +8,7 @@
 6. [Funktionen - Triangles](#funktionen---triangles)
 7. [Funktionen - Triangle + Quadrat](#funktionen---triangle--quadrat)
 8. [Schleifen - Zwei Kreise](#schleifen---zwei-kreise)
-9. [Schleifen - Blume](#schleifen---blume)
+9. [Schleifen - Mandala](#schleifen---mandala)
 10. [Zickzack](#zickzack)
 11. [Spirale](#spirale)
 12. [Farbige Blume](#farbige-blume)
@@ -89,7 +89,7 @@
 ## Schleifen - Mandala
 
 **Screenshot:**  
-<img src="images/schleifen-mandala.png" alt="Blume" width="200px">
+<img src="images/mandala.png" alt="Mandala" width="200px">
 
 ---
 
