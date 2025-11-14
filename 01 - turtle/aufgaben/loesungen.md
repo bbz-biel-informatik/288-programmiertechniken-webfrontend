@@ -254,30 +254,30 @@ for (let i = 0; i <= 4; i++) {
 **Turtle-Code:**
 
 ```javascript
-turtle.setSpeed(1); // set speed
-turtle.setPosition(70, 320); // set position
+  turtle.setSpeed(1); // set speed
 
-/**
- * Zeichnen eines Bogens
- */
-function bow() {
-  for (let i = 0; i < 180; i++) {
-    turtle.forward(2);
-    turtle.right(1);
+  /**
+   * Zeichnen eines Bogens
+   */
+  function bow() {
+    for (let i = 0; i < 180; i++) {
+      turtle.forward(1);
+      turtle.right(1);
+    }
   }
-}
 
-function flower() {
-  for (let i = 0; i < 6; i++) {
-    bow();
-    turtle.right(90);
+  function flower() {
+    for (let i = 0; i < 4; i++) {
+      bow();
+      turtle.right(90);
+    }
   }
-}
 
-for (let i = 0; i <= 10; i++) {
-  flower();
-  turtle.right(10);
-}
+  for (let i = 0; i < 36; i++) {
+    flower();
+    turtle.right(10);
+  }
+
 ```
 
 ---

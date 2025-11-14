@@ -89,6 +89,15 @@
 
 ## Schleifen - Mandala
 
+**Tipp**
+Wenn Sie eine Funktion haben, welche eine Blume macht (Aus der vorangehenden Aufgabe), können sie die hier wieder verwenden. Folgendes Muster wird benutzt:
+```
+36x: {
+    - Blume
+    - Drehung um 10 Grad
+}
+```
+
 **Screenshot:**  
 <img src="images/mandala.png" alt="Mandala" width="200px">
 
