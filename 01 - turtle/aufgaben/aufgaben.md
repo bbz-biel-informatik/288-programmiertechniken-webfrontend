@@ -7,13 +7,14 @@
 5. [Funktionen - Quadrate](#funktionen---quadrate)
 6. [Funktionen - Triangles](#funktionen---triangles)
 7. [Funktionen - Triangle + Quadrat](#funktionen---triangle--quadrat)
-8. [Schleifen - Zwei Kreise](#schleifen---zwei-kreise)
+8. [Schleifen - Zwei Kreise](#schleifen---kreis)
 9. [Schleifen - Mandala](#schleifen---mandala)
-10. [Zickzack](#zickzack)
-11. [Spirale](#spirale)
-12. [Farbige Blume](#farbige-blume)
-13. [Circle of circles](#circle-of-circles)
-14. [Sei Kreativ!](#sei-kreativ)
+10. [Schleifen - Mandala](#schleifen---blume)
+11. [Zickzack](#zickzack)
+12. [Spirale](#spirale)
+13. [Farbige Blume](#farbige-blume)
+14. [Circle of circles](#circle-of-circles)
+15. [Sei Kreativ!](#sei-kreativ)
 
 ---
 
