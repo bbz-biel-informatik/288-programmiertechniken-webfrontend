@@ -2,31 +2,55 @@ const input = document.querySelector("#input");
 const button = document.querySelector("#button");
 const output = document.querySelector("#output");
 
-// ---- Helper Methoden. Diese kannst du für den Moment ignorieren. ----
+// ---- Helper ----
+let waitingResolve = null;
 
-button.addEventListener("click", buttonClicked);
-window.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    buttonClicked();
-  }
+button.addEventListener("click", () => {
+    if (waitingResolve) finishInput();
 });
-init();
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && waitingResolve) finishInput();
+});
+
+function finishInput() {
+    const value = input.value;
+    input.value = "";
+    waitingResolve(value); // resolve the promise
+    waitingResolve = null;
+}
 
 /**
  * Diese Funktion gibt den Text aus dem Eingabefeld zurück.
- * @returns
  */
-function getInput() {
-  const value = input.value;
-  input.value = ""; // Clear the input field after getting the value
-  return value;
+function getInput(text) {
+    print(text);
+
+    return new Promise((resolve) => {
+        waitingResolve = resolve; // store the resolver until user clicks
+    });
+}
+
+function getNumberInput(text) {
+    print(text);
+
+    return new Promise((resolve) => {
+        waitingResolve = (value) => {
+            const number = parseFloat(value);
+            if (isNaN(number)) {
+                print("Bitte eine gültige Zahl eingeben.");
+            } else {
+                resolve(number);
+            }
+        };
+    });
 }
 
 /**
  * Diese Funktion gibt den Text in der Konsole aus.
  */
 function print(text) {
-  const newLine = document.createElement("li");
-  newLine.textContent = text;
-  output.prepend(newLine);
+    const newLine = document.createElement("li");
+    newLine.textContent = text;
+    output.prepend(newLine);
 }
