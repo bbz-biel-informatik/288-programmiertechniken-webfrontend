@@ -45,11 +45,11 @@ https://www.w3schools.com/jsref/jsref_obj_string.asp
    Schreibe ein Programm, wo du die Temperatur eingeben kannst. Der Automat soll dir dann vorschlagen, welches Outfit sinn macht. Du kannst selber kreativ sein oder dem Vorschlg folgen:
 
 ```
-Kleiner als 0 Grad -> Sicher Handschuhe! 🧤<br>
-Zwischen 0 und 10 Grad -> Ich würde eine warme Jacke anziehen.🧥<br>
-Zwischen 10 und 20 Grad -> Sicher noch lange Hosen. 👖<br>
-Zwischen 20 und 30 Grad -> Sonnenbrille und tshirt. 😎<br>
-Mehr als 30 Grad -> Tshirt, kurze Hose und ein aperol spritz! 🍹<br>
+Kleiner als 0 Grad -> Sicher Handschuhe! 🧤
+Zwischen 0 und 10 Grad -> Ich würde eine warme Jacke anziehen.🧥
+Zwischen 10 und 20 Grad -> Sicher noch lange Hosen. 👖
+Zwischen 20 und 30 Grad -> Sonnenbrille und tshirt. 😎
+Mehr als 30 Grad -> Tshirt, kurze Hose und ein aperol spritz! 🍹
 ```
 
 4. Zauberwort<br>

@@ -1,0 +1,287 @@
+/* --- RESET & VARIABLES --- */
+:root {
+    --bg-color: #f9f9f9; /* Soft off-white, easy on eyes */
+    --text-color: #1a1a1a; /* Soft black */
+    --accent-color: #666;
+    --spacing: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(249, 249, 249, 0.95); /* Glass effect */
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 1.2rem;
+}
+
+.links a {
+    margin-left: 30px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- HERO SECTION --- */
+header {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    max-width: 400px;
+}
+
+/* --- GALLERY (MASONRY GRID) --- */
+.gallery {
+    padding: 0 60px 60px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    grid-auto-flow: dense; /* Fills gaps automatically */
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: grayscale(100%); /* Artistic choice: Black & White initially */
+}
+
+/* Hover Effect: Color + Zoom */
+.photo-item:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* Grid Spanning Logic */
+.vertical {
+    grid-row: span 2;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+/* Overlay Text on Hover */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.photo-item:hover .overlay {
+    opacity: 1;
+}
+
+/* --- TEXT SECTION --- */
+.text-section {
+    padding: 100px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrap {
+    max-width: 600px;
+    text-align: center;
+}
+
+.content-wrap h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* --- FOOTER --- */
+footer {
+    padding: 80px 60px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.email-link {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.socials {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.socials a {
+    margin: 0 15px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    nav { padding: 20px 30px; }
+    
+    .hero-text h1 { font-size: 3rem; }
+    
+    .gallery { 
+        padding: 20px;
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+    
+    .horizontal, .vertical {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    header { height: 60vh; padding: 0 30px; }
+    
+    .photo-item img { filter: grayscale(0%); /* No B&W on mobile */ }
+}
+
+/* --- WELCOME BANNER --- */
+#welcome-banner {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Soft shadow */
+    z-index: 2000; /* Ensures it sits on top of everything */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+#close-btn {
+    background: transparent;
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+#close-btn:hover {
+    background: #333;
+}
+
+/* --- THEME TOGGLE BUTTON --- */
+#theme-toggle {
+    display: none;
+    margin-left: 25px;
+    background: transparent;
+    border: 1px solid #333;
+    color: #1a1a1a;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 20px; /* Pill shape */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect to make it feel interactive */
+#theme-toggle:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

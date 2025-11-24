@@ -7,11 +7,11 @@ var rulerLeft;
 var showRulers = true;
 
 function updateRulersVisibility() {
-  const top = document.getElementById("ruler-top");
-  const left = document.getElementById("ruler-left");
-  const corner = document.getElementById("ruler-corner");
-  const grid = document.getElementById("grid-overlay");
-  const zIndex = showRulers ? "1" : "-10";
+  const top = document.getElementById('ruler-top');
+  const left = document.getElementById('ruler-left');
+  const corner = document.getElementById('ruler-corner');
+  const grid = document.getElementById('grid-overlay');
+  const zIndex = showRulers ? '1' : '-10';
   if (top) top.style.zIndex = zIndex;
   if (left) left.style.zIndex = zIndex;
   if (corner) corner.style.zIndex = zIndex;
@@ -24,11 +24,11 @@ function updateRulersVisibility() {
 }
 
 function drawGrid() {
-  const grid = document.getElementById("grid-overlay");
+  const grid = document.getElementById('grid-overlay');
   if (!grid || !canvas) return;
   grid.width = canvas.width;
   grid.height = canvas.height;
-  const ctx = grid.getContext("2d");
+  const ctx = grid.getContext('2d');
 
   ctx.clearRect(0, 0, grid.width, grid.height);
 
@@ -40,7 +40,7 @@ function drawGrid() {
     ctx.beginPath();
     ctx.moveTo(x + 0.5, 0);
     ctx.lineTo(x + 0.5, grid.height);
-    ctx.strokeStyle = x % major === 0 ? "#cbd5e1" : "#e2e8f0"; // slate-300 / slate-200
+    ctx.strokeStyle = x % major === 0 ? '#cbd5e1' : '#e2e8f0'; // slate-300 / slate-200
     ctx.lineWidth = x % major === 0 ? 1 : 1;
     ctx.stroke();
   }
@@ -49,7 +49,7 @@ function drawGrid() {
     ctx.beginPath();
     ctx.moveTo(0, y + 0.5);
     ctx.lineTo(grid.width, y + 0.5);
-    ctx.strokeStyle = y % major === 0 ? "#cbd5e1" : "#e2e8f0";
+    ctx.strokeStyle = y % major === 0 ? '#cbd5e1' : '#e2e8f0';
     ctx.lineWidth = y % major === 0 ? 1 : 1;
     ctx.stroke();
   }
@@ -57,8 +57,8 @@ function drawGrid() {
 
 function drawRulers() {
   if (!canvas) return;
-  rulerTop = document.getElementById("ruler-top");
-  rulerLeft = document.getElementById("ruler-left");
+  rulerTop = document.getElementById('ruler-top');
+  rulerLeft = document.getElementById('ruler-left');
 
   // Match rulers to main canvas size
   rulerTop.width = canvas.width;
@@ -66,25 +66,25 @@ function drawRulers() {
   rulerLeft.width = 24;
   rulerLeft.height = canvas.height;
 
-  const ctxTop = rulerTop.getContext("2d");
-  const ctxLeft = rulerLeft.getContext("2d");
+  const ctxTop = rulerTop.getContext('2d');
+  const ctxLeft = rulerLeft.getContext('2d');
 
   // Clear and background
   ctxTop.clearRect(0, 0, rulerTop.width, rulerTop.height);
   ctxLeft.clearRect(0, 0, rulerLeft.width, rulerLeft.height);
-  ctxTop.fillStyle = "#f8fafc"; // slate-50
-  ctxLeft.fillStyle = "#f8fafc";
+  ctxTop.fillStyle = '#f8fafc'; // slate-50
+  ctxLeft.fillStyle = '#f8fafc';
   ctxTop.fillRect(0, 0, rulerTop.width, rulerTop.height);
   ctxLeft.fillRect(0, 0, rulerLeft.width, rulerLeft.height);
 
   // Baselines
-  ctxTop.strokeStyle = "#cbd5e1"; // slate-300
+  ctxTop.strokeStyle = '#cbd5e1'; // slate-300
   ctxTop.beginPath();
   ctxTop.moveTo(0, rulerTop.height - 0.5);
   ctxTop.lineTo(rulerTop.width, rulerTop.height - 0.5);
   ctxTop.stroke();
 
-  ctxLeft.strokeStyle = "#cbd5e1";
+  ctxLeft.strokeStyle = '#cbd5e1';
   ctxLeft.beginPath();
   ctxLeft.moveTo(rulerLeft.width - 0.5, 0);
   ctxLeft.lineTo(rulerLeft.width - 0.5, rulerLeft.height);
@@ -95,13 +95,13 @@ function drawRulers() {
   const big = 50;
 
   // Top (horizontal) ruler
-  ctxTop.strokeStyle = "#94a3b8"; // slate-400
-  ctxTop.fillStyle = "#475569"; // slate-600
+  ctxTop.strokeStyle = '#94a3b8'; // slate-400
+  ctxTop.fillStyle = '#475569'; // slate-600
   ctxTop.lineWidth = 1;
   ctxTop.font =
-    "10px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial";
-  ctxTop.textAlign = "center";
-  ctxTop.textBaseline = "top";
+    '10px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial';
+  ctxTop.textAlign = 'center';
+  ctxTop.textBaseline = 'top';
   for (let x = 0; x <= rulerTop.width; x += small) {
     const isBig = x % big === 0;
     const h = isBig ? 12 : 6;
@@ -115,11 +115,11 @@ function drawRulers() {
   }
 
   // Left (vertical) ruler
-  ctxLeft.strokeStyle = "#94a3b8";
-  ctxLeft.fillStyle = "#475569";
+  ctxLeft.strokeStyle = '#94a3b8';
+  ctxLeft.fillStyle = '#475569';
   ctxLeft.lineWidth = 1;
   ctxLeft.font =
-    "10px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial";
+    '10px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial';
   for (let y = 0; y <= rulerLeft.height; y += small) {
     const isBig = y % big === 0;
     const w = isBig ? 12 : 6;
@@ -131,8 +131,8 @@ function drawRulers() {
       ctxLeft.save();
       ctxLeft.translate(2, y);
       ctxLeft.rotate(-Math.PI / 2);
-      ctxLeft.textAlign = "right";
-      ctxLeft.textBaseline = "top";
+      ctxLeft.textAlign = 'right';
+      ctxLeft.textBaseline = 'top';
       ctxLeft.fillText(String(y), 0, 0);
       ctxLeft.restore();
     }
@@ -140,14 +140,14 @@ function drawRulers() {
 }
 
 function init() {
-  canvas = document.getElementById("real-turtle");
+  canvas = document.getElementById('real-turtle');
   turtle = new RealTurtle.default(canvas, { autoStart: true });
 
   // Hook up toggle
-  const toggle = document.getElementById("toggle-rulers");
+  const toggle = document.getElementById('toggle-rulers');
   if (toggle) {
     showRulers = toggle.checked;
-    toggle.addEventListener("change", (e) => {
+    toggle.addEventListener('change', (e) => {
       showRulers = e.target.checked;
       updateRulersVisibility();
     });
@@ -157,7 +157,7 @@ function init() {
 }
 
 function clear() {
-  const context = canvas.getContext("2d");
+  const context = canvas.getContext('2d');
   context.clearRect(0, 0, canvas.width, canvas.height);
   turtle = new RealTurtle.default(canvas, { autoStart: true });
 }
@@ -165,10 +165,10 @@ function clear() {
 function runTurtle() {
   clear();
   // Delegate to student code in turtle-code.js
-  if (typeof start === "function") {
+  if (typeof start === 'function') {
     start(turtle);
   }
 }
 
 // Initialize after page (and CDN scripts) are loaded
-window.addEventListener("load", init);
+window.addEventListener('load', init);
