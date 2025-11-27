@@ -235,7 +235,7 @@ footer {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Soft shadow */
     z-index: 2000; /* Ensures it sits on top of everything */
-    display: flex;
+    display: none;
     align-items: center;
     gap: 15px;
     font-size: 0.9rem;

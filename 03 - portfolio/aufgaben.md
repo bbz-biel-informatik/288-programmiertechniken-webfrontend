@@ -12,7 +12,11 @@ Diese Tools helfen dir, dein Task zu erfüllen.
 Bevor du etwas manipulieren kannst, musst du es in eine Variable speichern.
 ```javascript
 // Sucht im HTML nach id="mein-button"
-const meinElement = document.getElementById("mein-button");
+let meinElement = document.getElementById("mein-button");
+
+// Sucht nach einem CSS Query
+let meinElement = document.querySelector(".button")
+
 ```
 
 ### 2. Styles ändern (CSS via JS)
@@ -65,28 +69,31 @@ meinElement.remove(); // Löscht das Element komplett aus dem HTML
 ## Tasks
 
 ### 🎫 Task 1: Die Begrüßung
+
 Wir haben eine „Welcome-Message“ (`<div id="welcome-banner">`), aber sie ist versteckt.
 
-1.  **Sichtbar machen:** Finde den Welcome banner im CSS und ändere dessen property 'display: none' auf 'display: flex', damit du den Banner siehst.
+1.  **Sichtbar machen:** Finde den Welcome banner im CSS und ändere dessen property `display: none` auf `display: flex`, damit du den Banner siehst.
 2.  **Funktion:** Der User soll die Nachricht wegklicken können.
-    * Wähle den Button im Banner aus (`#close-btn`).
-    * Füge einen „Click“-Listener hinzu.
-    * Wenn geklickt: Entferne den gesamten Banner.
+    * Wähle den Button im Banner [per Selektor](#1-elemente-aus-dem-html-holen) aus aus (`#close-btn`).
+    * Füge einen [„Click“-Listener](#3-auf-klicks-reagieren) hinzu.
+    * Wenn geklickt: [Entferne](#5-elemente-löschen) den gesamten Banner.
 
-### 🎫 Task 2: Der Dark Mode
+
+### 🎫 Task 2: Bilderrahmen
+Das Ziel ist es, beim Click auf das erste Bild, dem Bild einen rahmen zu geben. Gehe dabei wie folgt vor:
+1. **ID Vergeben** Damit wir das Bild im Javascript "verlinken" können, müssen wir ihm eine eindeutige ID im HTML file vergeben.
+2. **Funktion** [Selektiere](#1-elemente-aus-dem-html-holen) das Bild mit der gegebenen ID in javascript und füge einen [click listener](#3-auf-klicks-reagieren) hinzu. Im Body der Funktion [veränderst](#2-styles-ändern-css-via-js) du dann den Style entsprechend.
+
+
+### 🎫 Task 3: Der Dark Mode
 Nachtmodus ist Pflicht. Der Schalter existiert (`<button id="theme-toggle">`), ist aber unsichtbar.
 
-1.  **Sichtbar machen:** Suche den Theme toggle Button im CSS und setze `style.display` auf `"block"`.
+1.  **Sichtbar machen:** Suche den Theme toggle Button im CSS und setze `display: none` auf `display: block`.
 2.  **Funktion:** Wenn der User klickt, muss die Seite dunkel werden.
     * Ändere `document.body.style.backgroundColor` zu `"#1a1a1a"`.
     * Ändere die Textfarbe (`document.body.style.color`) zu `"#ffffff"`.
-    * Hinweis: damit du weisst, ob die Website dunkel ist oder nicht, brauchst du eine Zusätzliche Variable, die du dann umschalten kannst.
-3. **Profi-Challenge (An/Aus):**
-    * Erstelle eine Variable `let darkMode = false;` (außerhalb des Klicks!).
-    * Prüfe beim Klick: Wenn `darkMode` falsch (`false`) ist → Dark mode machen & Variable auf `true` setzen.
-    * Sonst (`else`) → Dark mode resetten & Variable auf `false` setzen. Zum Resetten, setzte die Farben zurück auf `backgroundColor -> #ffffff` und `textfarbe -> #1a1a1a`
 
-### 🎫 Task 3: Die Bild-Filter
+### 🎫 Task 4 (Zusatz): Die Bild-Filter
 Wir wollen die Galerie (`<section id="work">`) per Tastatur steuern. Ein Key soll den Filter der ganzen Section entsprechend umstellen. Das wirkt sich dann auf alle Fotos aus. Du wirst es sehen ;)
 
 *  **Event:** Höre auf das ganze `document` mit `"keydown"`.
@@ -98,17 +105,5 @@ Wir wollen die Galerie (`<section id="work">`) per Tastatur steuern. Ein Key sol
     * Taste **'r'** → Reset (`gallery.style.filter = "none"`)
 
 * 🔗 **Hilfe:** [MDN Web Docs: CSS Filter](https://developer.mozilla.org/de/docs/Web/CSS/filter)
-
-### 🎫 Task 4: Der „Avant-Garde“ Tilt
-Das Design soll „edgy“ wirken. Der Button (`#tilt-btn`) ist versteckt.
-
-1.  **Sichtbar machen:** Suche den Button im css und setze den style `display` auf `"block"`.
-2.  **Funktion:** Bei Klick kippt die ganze Seite (`document.body`).
-    * Befehl: `style.transform = "rotate(-1.5deg)"`.
-3.  **Profi-Challenge (An/Aus):**
-    * Erstelle eine Variable `let isTilted = false;` (außerhalb des Klicks!).
-    * Prüfe beim Klick: Wenn `isTilted` falsch (`false`) ist → kippen & Variable auf `true` setzen.
-    * Sonst (`else`) → gerade rücken (`"none"`) & Variable auf `false` setzen.
-
 ---
 **Viel Erfolg beim Coden! 🚀**
