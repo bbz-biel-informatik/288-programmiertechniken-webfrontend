@@ -41,7 +41,27 @@ https://www.w3schools.com/jsref/jsref_obj_string.asp
 
 1. Schreibe ein Programm, das für eine eingegebene Schulnote (1–6) anzeigt, ob die Prüfung bestanden ist oder nicht.
 2. Schreibe ein Programm, das für eine eingegebene Zahl anzeigt, ob sie negativ, positiv oder Null ist.
-3. Outfit-o-mat<br>
+3. Schreibe Programm, welches für ein eingegebenes Land die Hauptstadt ausgibt. Zum Beispiel:
+
+```
+Eingabe: Deutschland -> Ausgabe: Die Hauptstadt von Deutschland ist Berlin
+Eingabe: Schweden -> Ausgabe: Die Hauptstadt von Schweden ist Stockholm
+Eingabe: USA -> Ausgabe: Die Hauptstadt von USA ist Washington
+...
+```
+
+4. Schreibe ein Quiz nach dem folgenden Schema. Wenn der Benutzer die Antwort richtig hat, schreibe jeweils: "Das ist Richtig!" sonst, schreibe: "Das ist falsch".
+```
+1. Frage: In welchem Land liegt Levi?
+Richtige Antwort: Finnland
+
+2. Frage: Wo wird die Winter Olympia 2026 ausgetragen?
+Richtige Antwort: Milano oder Cortina d'ampezzo
+```
+
+4.1 Zusatzaufgabe: Implementiere ein Punktesystem für dieses Quiz. Tipp: Mache zu Beginn eine Variable Score. Gib am Ende die Punktzahl aus.
+
+5. Outfit-o-mat<br>
    Schreibe ein Programm, wo du die Temperatur eingeben kannst. Der Automat soll dir dann vorschlagen, welches Outfit sinn macht. Du kannst selber kreativ sein oder dem Vorschlg folgen:
 
 ```
@@ -52,7 +72,7 @@ Zwischen 20 und 30 Grad -> Sonnenbrille und tshirt. 😎
 Mehr als 30 Grad -> Tshirt, kurze Hose und ein aperol spritz! 🍹
 ```
 
-4. Zauberwort<br>
+6. Zauberwort<br>
    Input: ein Wunsch (z. B. kann ich gehen bitte).<br>
    Wenn das Wort "bitte" drin ist -> „Klar! 🫶“<br>
    Wenn nicht -> "Wie ist das Zauberwort?"<br>
