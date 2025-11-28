@@ -66,26 +66,35 @@ meinElement.remove(); // Löscht das Element komplett aus dem HTML
 
 ---
 
-## Tasks
+## Aufgaben
 
-### 🎫 Task 1: Die Begrüßung
+### 🎫 Aufgabe 1: Dark mode text
+Wenn der Benutzer auf den Titel klickt, soll der Hintergrund schwarz werden und der Text weiss.
+Der Titel hat die ID "title".
+Vorgehen:
+* Wähle den Titel [per Selektor](#1-elemente-aus-dem-html-holen) aus (`#title`)
+* Füge einen [„Click“-Listener](#3-auf-klicks-reagieren) hinzu.
+* Wenn geklickt: [verändere den style](#2-styles-ändern-css-via-js): `backgroundColor = "black" und color = "white"`
+
+### 🎫 Aufgabe 2: Die Begrüßung
 
 Wir haben eine „Welcome-Message“ (`<div id="welcome-banner">`), aber sie ist versteckt.
 
 1.  **Sichtbar machen:** Finde den Welcome banner im CSS und ändere dessen property `display: none` auf `display: flex`, damit du den Banner siehst.
 2.  **Funktion:** Der User soll die Nachricht wegklicken können.
     * Wähle den Button im Banner [per Selektor](#1-elemente-aus-dem-html-holen) aus aus (`#close-btn`).
-    * Füge einen [„Click“-Listener](#3-auf-klicks-reagieren) hinzu.
+    * Wähle eben falls den Banner selbst aus (denn diesen wollen wir dann löschen).
+    * Füge einen [„Click“-Listener](#3-auf-klicks-reagieren) zum button hinzu.
     * Wenn geklickt: [Entferne](#5-elemente-löschen) den gesamten Banner.
 
 
-### 🎫 Task 2: Bilderrahmen
+### 🎫 Aufgabe 3: Bilderrahmen
 Das Ziel ist es, beim Click auf das erste Bild, dem Bild einen rahmen zu geben. Gehe dabei wie folgt vor:
 1. **ID Vergeben** Damit wir das Bild im Javascript "verlinken" können, müssen wir ihm eine eindeutige ID im HTML file vergeben.
 2. **Funktion** [Selektiere](#1-elemente-aus-dem-html-holen) das Bild mit der gegebenen ID in javascript und füge einen [click listener](#3-auf-klicks-reagieren) hinzu. Im Body der Funktion [veränderst](#2-styles-ändern-css-via-js) du dann den Style entsprechend.
 
 
-### 🎫 Task 3: Der Dark Mode
+### 🎫 Aufgabe 4: Der Dark Mode
 Nachtmodus ist Pflicht. Der Schalter existiert (`<button id="theme-toggle">`), ist aber unsichtbar.
 
 1.  **Sichtbar machen:** Suche den Theme toggle Button im CSS und setze `display: none` auf `display: block`.
@@ -93,7 +102,10 @@ Nachtmodus ist Pflicht. Der Schalter existiert (`<button id="theme-toggle">`), i
     * Ändere `document.body.style.backgroundColor` zu `"#1a1a1a"`.
     * Ändere die Textfarbe (`document.body.style.color`) zu `"#ffffff"`.
 
-### 🎫 Task 4 (Zusatz): Die Bild-Filter
+### 🎫 Aufgabe 5: Bild vergrössern
+Versuche, das Bild zu vergrössern, wenn der Benutzer drauf klickt. (Entweder nur eines oder auch alle)
+
+### 🎫 Aufgabe 6 (Zusatz): Die Bild-Filter
 Wir wollen die Galerie (`<section id="work">`) per Tastatur steuern. Ein Key soll den Filter der ganzen Section entsprechend umstellen. Das wirkt sich dann auf alle Fotos aus. Du wirst es sehen ;)
 
 *  **Event:** Höre auf das ganze `document` mit `"keydown"`.
