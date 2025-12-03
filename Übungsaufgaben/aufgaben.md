@@ -17,7 +17,10 @@ Tipp:
 <img src="images/circle-of-triangles.png" alt="Blume" width="300px">
 
 ## 2 Funktionen
-Schreiben Sie eine Funktion, welche ein Quadrat zeichnet. Nennen Sie die Funktion "square" und nehmen Sie einen Parameter "size" entgegen. Rufen Sie die Funktion dann mit einem beliebigen Wert auf.
+Schreiben Sie eine Funktion, welche ein Grosses "T" Zeichnet. Schreiben Sie dafür eine Funktion mit dem parameter "size", welcher die Grösse des T definiert. Die Funktion sollte wie folgt aufgerufen werden können:
+```javascript
+drawT(100);
+```
 
 ## 3 Funktionen
 Was macht die folgende Funktion, und was bewirken die Parameter?
@@ -106,7 +109,7 @@ Gegeben ist die folgende HTML Struktur. Schreiben Sie Javascript Code, welcher b
 ```
 
 ## 9 DOM Manipulation
-Gegeben ist die folgende HTML Struktur. Schreiben Sie Javascript Code, welcher beim Hover auf das Bild die Grösse verändert auf "230px X 230px".
+Gegeben ist die folgende HTML Struktur. Schreiben Sie Javascript Code, welcher beim Click auf das Bild die Grösse verändert auf "230px X 230px".
 
 ```html
 <html>
@@ -116,15 +119,9 @@ Gegeben ist die folgende HTML Struktur. Schreiben Sie Javascript Code, welcher b
 </html>
 ```
 
-## 9 Variablen
+## 10 Variablen
 Nennen Sie drei verschiedene Datentypen, die eine Variable haben kann.
 
-## 10 Variablen
-Was ist der Unterschied zwischen den folgenden 2 Variablen?
-```javascript
-const variable1 = 12;
-let variable2 = 12;
-```
 
 ## 11 Variablen
 Was gibt die Konsole bei folgendem Code aus?
@@ -143,4 +140,13 @@ let y = 10;
 x = x / 2;
 x = x + y;
 console.log(x);
+```
+
+## 13 Variablen
+Was gibt die Konsole bei folgendem Code aus?
+```javascript
+let a = "Guten";
+let b = " ";
+let c = "Morgen";
+console.log(a + b + c);
 ```

@@ -79,12 +79,11 @@ Mehr als 30 Grad -> Tshirt, kurze Hose und ein aperol spritz! 🍹
 
 Tipp: https://www.w3schools.com/js/js_string_search.asp#mark_includes
 
-## 3 - Schleifen und Bedingungen
+## 3 - Schleifen und Bedingungen (Zusatz)
 
-1. Schreibe ein Programm, das von 10 aus rückwärts bis Null zählt und jeweils die Zahlen anzeigt.
-2. Schreibe ein Programm, das die Summe der ersten 20 Zahlen in einer Schleife berechnet (`1 + 2 + ... + 20`).
+1. Schreibe ein Programm, das die Summe der ersten 20 Zahlen in einer Schleife berechnet (`1 + 2 + ... + 20`).
    - **Zur Kontrolle:** Das Resultat sollte `210` sein.
-3. Rizz-O-Meter<br>
+2. Rizz-O-Meter<br>
    Eingabe = Name → gib einen „Rizz-Score“ aus.<br>
    Der Rizz score ergibt sich aus der Länge des Namens und einer Zufahlstahl mit der folgenden Formel:<br>
 
@@ -105,20 +104,14 @@ function getRandomInt(max) {
 
 Tipp: https://www.w3schools.com/js/js_string_methods.asp#mark_length
 
-4. Hashtag-Maker: Als Eingabe soll ein satz dienen. Die Ausgabe soll den Satz mit Hashtags ausschmücken.<br>
+3. Hashtag-Maker: Als Eingabe soll ein satz dienen. Die Ausgabe soll den Satz mit Hashtags ausschmücken.<br>
    Beispiel<br>
    Eingabe: Biel hat 100 Aura<br>
    Ausgabe: #Biel #hat #100 #Aura<br>
    Tipp: Mann kann das mit einer String methode machen.
    https://www.w3schools.com/jsref/jsref_replace.asp
 
-5. Schreibe ein kleines Rätsel, welches nach der Hauptstadt von Spanien fragt. Wenn die Eingabe richtig ist,
-   soll das Programm schreiben "Richtig! 🔥"<br>
-   Wenn nicht, soll es schreiben:<br>
-   "Barcelona ist leider nicht die Hauptstadt von Spanien 😯"<br>
-   Wobei "Barcelona" ersetzt werden soll mit der falschen Eingabe.
-
-6. Döner Preis: Schreibe ein Programm, welches nach dem Preis des Dönsers fragt.<br>
+4. Döner Preis: Schreibe ein Programm, welches nach dem Preis des Dönsers fragt.<br>
    Wenn er unter 10 Franken ist, schreibe: <br>
    "Gönjamin".<br>
    Ist er über 10 Franken, schreibe:<br>
