@@ -15,7 +15,7 @@
 Element hinzu und gib ihm die ID "time"<br>
 **7** - Finde das leere Element mit Javascript und füge den Text "0" ein. Mit folgendem Befehl kannst du einen Text einfügen:
 ```javascript
-const myDiv = document.querySelector("#myDiv");
+let myDiv = document.querySelector("#myDiv");
 myDiv.innerText = "Some text";
 ```
 
@@ -33,7 +33,7 @@ document.addEventListener("keydown", function(event) {
 
 ```javascript
 // run chanty.mp3
-const audio = new Audio("chanty.mp3");
+let audio = new Audio("chanty.mp3");
 audio.play();
 ```
 **3** - Erstelle einen Zähler, welcher das Element mit der ID "time" alle 1 Sekunde nach oben zählt.
@@ -53,8 +53,8 @@ setInterval(() => {
 ```javascript
 // Tipp
 
-const myShip = document.querySelector("#myShip");
-const enemy = document.querySelector("#enemy");
+let myShip = document.querySelector("#myShip");
+let enemy = document.querySelector("#enemy");
 
 function checkCollision() {
   console.log(parseInt(myShip.style.left) - parseInt(enemy.style.left));

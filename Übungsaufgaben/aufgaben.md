@@ -42,7 +42,7 @@ Schreiben Sie ein Javascript programm, welches nach dem Alter fragt und entsprec
 Ergänzen Sie den untenstehenden Code. Geben Sie den Frankenbetrag mit der Logfunktion `console.log("XX Franken")` an.
 
 ```javascript
-const age = getInput();
+let age = getInput();
 
 // Hier weiterfahren
 ```
@@ -60,9 +60,9 @@ Ein Passwort soll mindestens 12 Zeichen haben. Wenn nicht, soll eine Errormeldun
 
 ### Hilfestellung
 ```javascript
-const myString = "Hello, World";
+let myString = "Hello, World";
 // die .length Funktion gibt die Länge des Strings an.
-const length = myString.length; // 12
+let length = myString.length; // 12
 
 // die alert() Funktion gibt eine Warnung aus.
 alert("Hello, world!");
@@ -70,7 +70,7 @@ alert("Hello, world!");
 
 ### Anfangscode
 ```javascript
-const password = "my-super-strong-password"
+let password = "my-super-strong-password"
 // ...
 ```
 

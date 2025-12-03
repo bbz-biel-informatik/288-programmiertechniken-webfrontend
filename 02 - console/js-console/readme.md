@@ -14,9 +14,9 @@ Im Script.js wirst du den code schreiben. Hier gibt es besonders
 // Einen Text auf der Konsole ausgeben
 print("Hallo Welt!");
 // Den User nach einem Text fragen (String)
-const myText = await getInput("Geben Sie ein Text ein");
+let myText = await getInput("Geben Sie ein Text ein");
 // Den User nach einer Zahl fragen (Number)
-const myNumber = await getTextInput("Geben Sie eine Zahl ein");
+let myNumber = await getTextInput("Geben Sie eine Zahl ein");
 ```
 
 **await** bedeutet, dass die Funktion asynchron ist. Das heißt, das Programm wartet auf die Eingabe des Users, bevor es weitergeht.
@@ -35,7 +35,7 @@ print("Das Resultat ist: " + resultat);
 Holt den Text aus dem Eingabefeld. Diese Funktion gibt den eingegebenen Text als String zurück.
 
 ```javascript
-const userInput = await getInput();
+let userInput = await getInput();
 print("Du hast eingegeben: " + userInput);
 ```
 
@@ -43,7 +43,7 @@ print("Du hast eingegeben: " + userInput);
 Wandelt einen Text in eine Zahl um. Nützlich wenn du mit Zahlen rechnen möchtest.
 
 ```javascript
-const zahl = await getNumberInput();
+let zahl = await getNumberInput();
 print("Die Zahl mal 2 ist: " + zahl * 2);
 ```
 
@@ -51,7 +51,7 @@ print("Die Zahl mal 2 ist: " + zahl * 2);
 Generiert eine Zufallszahl zwischen 0 und 1.
 
 ```javascript
-const zufallszahl = Math.round(Math.random() * 100); // Zahl zwischen 0 und 100
+let zufallszahl = Math.round(Math.random() * 100); // Zahl zwischen 0 und 100
 ```
 
 ## Programmierkonzepte
@@ -67,7 +67,7 @@ let istStudent = true;
 ### Bedingungen (if/else)
 
 ```javascript
-const alter = getNumberInput();
+let alter = getNumberInput();
 if (alter >= 18) {
   print("Du bist volljährig");
 } else {
@@ -93,7 +93,7 @@ for (let i = 1; i <= 10; i++) {
 3. **Debugge mit print():** Nutze `print()` um zu sehen, was dein Code macht:
 
    ```javascript
-   const zahl = getNumberInput();
+   let zahl = getNumberInput();
    print("Eingegebene Zahl: " + zahl); // Zum Debuggen
    ```
 
@@ -102,7 +102,7 @@ for (let i = 1; i <= 10; i++) {
 ## Beispielprogramm
 
 ```javascript
-const zahl = getNumberInput("Geben Sie eine Zahl ein:");
+let zahl = getNumberInput("Geben Sie eine Zahl ein:");
 
 if (zahl > 10) {
   print("Die Zahl ist größer als 10");

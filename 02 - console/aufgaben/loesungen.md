@@ -160,7 +160,7 @@ Schreibe ein Programm, das für eine eingegebene Zahl anzeigt, ob sie negativ, p
 **Lösung:**
 
 ```javascript
-  const zahl = await getNumberInput("Gib eine zahl ein")
+  let zahl = await getNumberInput("Gib eine zahl ein")
 
   if (zahl > 0) {
     print("Die Zahl " + zahl + " ist positiv.");
@@ -261,7 +261,7 @@ Wenn nicht → "Wie ist das Zauberwort?"
 
 ```javascript
 function buttonClicked() {
-    const wunsch = getInput();
+    let wunsch = getInput();
     
     if (wunsch.includes("bitte")) {
         print("Klar! 🫶");
@@ -345,4 +345,3 @@ if (preis < 10) {
 ```
 
 ---
-

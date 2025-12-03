@@ -70,7 +70,7 @@ Variablen können folgende Typen haben:
 
 ```javascript
 let x = 1; // Variable definieren
-const pi = 3.141; // Konstante definieren
+let pi = 3.141; // Konstante definieren
 
 // HTML Objekt direkt in einer Variable speichern.
 let myShip = document.querySelector("#myShip")
@@ -118,10 +118,10 @@ if(city != "stockholm") // city ist NICHT stockholm
 ## DOM (HTML) Manipulation
 ```javascript
 // Gib mir das Objekt mit der id "image"
-const myImage = document.querySelector("#image");
+let myImage = document.querySelector("#image");
 
 // Gib mir das Objekt mit der id "image" - andere Methode
-const myImage = document.getElementById("image")
+let myImage = document.getElementById("image")
 
 // Setzte den Hintergrund des Bildes auf rot
 myImage.style.backgroundColor = "red";
@@ -144,12 +144,11 @@ document.addEventListener("keydown", function(event) {
 })
 
 // Element löschen
-const myImage = document.querySelector("#myImage");
+let myImage = document.querySelector("#myImage");
 myImage.remove();
 
 // Text verändern
-const someElement = document.querySelector("#element");
+let someElement = document.querySelector("#element");
 someElement.innerText = "Some text";
 ```
-
 

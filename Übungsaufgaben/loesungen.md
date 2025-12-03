@@ -66,7 +66,7 @@ myFunction(5); // Zeichnet einen größeren Halbkreis
 
 **Lösung:**
 ```javascript
-const age = parseInt(getInput());
+let age = parseInt(getInput());
 
 if (age < 12) {
     console.log("10 Franken");
@@ -94,7 +94,7 @@ Die Schleife wird **7 mal** ausgeführt. Sie gibt die Zahlen 0, 1, 2, 3, 4, 5, 6
 
 **Lösung:**
 ```javascript
-const password = "my-super-strong-password";
+let password = "my-super-strong-password";
 
 if (password.length < 12) {
     alert("Das Passwort muss mindestens 12 Zeichen haben!");
@@ -108,7 +108,7 @@ if (password.length < 12) {
 
 **Lösung:**
 ```javascript
-const bild = document.getElementById("bild");
+let bild = document.getElementById("bild");
 bild.addEventListener("click", function() {
     bild.remove();
 });
@@ -119,7 +119,7 @@ bild.addEventListener("click", function() {
 
 **Lösung:**
 ```javascript
-const ocean = document.querySelector(".ocean");
+let ocean = document.querySelector(".ocean");
 ocean.style.backgroundColor = "blue";
 ```
 
@@ -128,7 +128,7 @@ ocean.style.backgroundColor = "blue";
 
 **Lösung:**
 ```javascript
-const enemy = document.getElementById("enemy");
+let enemy = document.getElementById("enemy");
 document.addEventListener("keydown", function(event) {
     if (event.key === "t") {
         enemy.remove();
@@ -141,7 +141,7 @@ document.addEventListener("keydown", function(event) {
 
 **Lösung:**
 ```javascript
-const image = document.getElementById("my-image");
+let image = document.getElementById("my-image");
 
 image.addEventListener("hover", function() {
     this.style.width = "230px";
@@ -161,13 +161,13 @@ image.addEventListener("hover", function() {
 **Aufgabe:** Was ist der Unterschied zwischen den folgenden 2 Variablen?
 
 ```javascript
-const variable1 = 12;
+let variable1 = 12;
 let variable2 = 12;
 ```
 
 **Lösung:**
-- `const` erstellt eine Konstante, deren Wert nicht mehr geändert werden kann
 - `let` erstellt eine Variable, deren Wert später geändert werden kann
+- Eine `const`-Deklaration wäre unveränderlich, wird hier aber nicht verwendet
 
 ## 13 Variablen
 **Aufgabe:** Was gibt die Konsole bei folgendem Code aus?
