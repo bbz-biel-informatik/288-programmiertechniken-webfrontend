@@ -5,7 +5,7 @@
 
 **Lösung:**
 ```javascript
-function triangle(){
+function triangle() {
     turtle.forward(50);
     turtle.right(120);
     turtle.forward(50);
@@ -13,7 +13,7 @@ function triangle(){
     turtle.forward(50);
     turtle.right(120);
 }
-for(let i = 0; i < 8; i++) {
+for (let i = 0; i < 8; i++) {
     triangle();
     turtle.forward(20);
     turtle.right(45);
@@ -21,23 +21,21 @@ for(let i = 0; i < 8; i++) {
 ```
 
 ## 2 Funktionen
-**Aufgabe:** Schreiben Sie eine Funktion, welche ein Quadrat zeichnet. Nennen Sie die Funktion "square" und nehmen Sie einen Parameter "size" entgegen. Rufen Sie die Funktion dann mit einem beliebigen Wert auf.
+**Aufgabe:** Schreiben Sie eine Funktion, welche ein grosses "T" zeichnet. Nennen Sie die Funktion "drawT" und nehmen Sie einen Parameter "size" entgegen.
 
 **Lösung:**
 ```javascript
-function square(size) {
+function drawT(size) {
+    // obere Linie
     turtle.forward(size);
+
+    // zur Mitte zurück und Stamm zeichnen
+    turtle.backward(size / 2);
     turtle.right(90);
     turtle.forward(size);
-    turtle.right(90);
-    turtle.forward(size);
-    turtle.right(90);
-    turtle.forward(size);
-    turtle.right(90);
 }
 
-// Funktion mit Größe 100 aufrufen
-square(100);
+drawT(100);
 ```
 
 ## 3 Funktionen
@@ -45,7 +43,7 @@ square(100);
 
 ```javascript
 function myFunction(param) {
-    for(let i = 0; i < 180; i++) {
+    for (let i = 0; i < 180; i++) {
         turtle.forward(param);
         turtle.right(1);
     }
@@ -53,7 +51,7 @@ function myFunction(param) {
 ```
 
 **Lösung:**
-Die Funktion `myFunction` zeichnet einen Halbkreis (180°). Der Parameter `param` bestimmt die Größe des Halbkreises - je größer der Wert, desto größer der Halbkreis.
+Die Funktion `myFunction` zeichnet einen Halbkreis (180°). Der Parameter `param` bestimmt die Größe des Halbkreises – je größer der Wert, desto größer der Halbkreis.
 
 **Beispielaufruf:**
 ```javascript
@@ -66,14 +64,14 @@ myFunction(5); // Zeichnet einen größeren Halbkreis
 
 **Lösung:**
 ```javascript
-let age = parseInt(getInput());
+let age = await getNumberInput("Wie alt bist du?");
 
 if (age < 12) {
-    console.log("10 Franken");
+    print("10 Franken");
 } else if (age >= 12 && age <= 15) {
-    console.log("12 Franken");
+    print("12 Franken");
 } else {
-    console.log("15 Franken");
+    print("15 Franken");
 }
 ```
 
@@ -81,8 +79,8 @@ if (age < 12) {
 **Aufgabe:** Wie oft wird die folgende Schleife ausgeführt?
 
 ```javascript
-for(let i = 0; i < 7; i++) {
-    console.log(i);
+for (let i = 0; i < 7; i++) {
+    print(i);
 }
 ```
 
@@ -90,6 +88,17 @@ for(let i = 0; i < 7; i++) {
 Die Schleife wird **7 mal** ausgeführt. Sie gibt die Zahlen 0, 1, 2, 3, 4, 5, 6 aus.
 
 ## 6 If / Else
+Wie oft wird die folgende Schleife ausgeführt?
+```javascript
+for (let i = 1; i <= 10; i++) {
+    print(i);
+}
+```
+
+**Lösung:**
+Die Schleife wird **10 mal** ausgeführt. Sie gibt die Zahlen 1 bis 10 aus.
+
+## 7 If / Else
 **Aufgabe:** Ein Passwort soll mindestens 12 Zeichen haben. Wenn nicht, soll eine Errormeldung erscheinen.
 
 **Lösung:**
@@ -103,18 +112,18 @@ if (password.length < 12) {
 }
 ```
 
-## 7 DOM Manipulation
+## 8 DOM Manipulation
 **Aufgabe:** Schreiben Sie Javascript Code, welcher beim Klick auf das Element mit der ID "bild" das Element löscht.
 
 **Lösung:**
 ```javascript
-let bild = document.getElementById("bild");
-bild.addEventListener("click", function() {
+let bild = document.querySelector("#bild");
+bild.addEventListener("click", function () {
     bild.remove();
 });
 ```
 
-## 8 DOM Manipulation
+## 9 DOM Manipulation
 **Aufgabe:** Schreiben Sie Javascript Code, welcher das Element mit der Klasse "ocean" auswählt und den Hintergrund blau macht.
 
 **Lösung:**
@@ -123,53 +132,50 @@ let ocean = document.querySelector(".ocean");
 ocean.style.backgroundColor = "blue";
 ```
 
-## 9 DOM Manipulation
+## 10 DOM Manipulation
 **Aufgabe:** Schreiben Sie Javascript Code, welcher beim Klick auf die Taste "t" das Element mit der ID "enemy" löscht.
 
 **Lösung:**
 ```javascript
-let enemy = document.getElementById("enemy");
-document.addEventListener("keydown", function(event) {
+let enemy = document.querySelector("#enemy");
+document.addEventListener("keydown", function (event) {
     if (event.key === "t") {
         enemy.remove();
     }
 });
 ```
 
-## 10 DOM Manipulation
+## 11 DOM Manipulation
 **Aufgabe:** Schreiben Sie Javascript Code, welcher beim Hover auf das Bild die Grösse verändert auf "230px X 230px".
 
 **Lösung:**
 ```javascript
-let image = document.getElementById("my-image");
+let image = document.querySelector("#my-image");
 
-image.addEventListener("hover", function() {
+image.addEventListener("mouseover", function () {
     this.style.width = "230px";
     this.style.height = "230px";
 });
 ```
 
-## 11 Variablen
+## 12 DOM Manipulation
+**Aufgabe:** Schreiben Sie Javascript Code, welcher ohne einen Klick-Listener den Inhalt des Elements mit der ID "status" auf "Bereit" ändert.
+
+**Lösung:**
+```javascript
+let status = document.querySelector("#status");
+status.textContent = "Bereit";
+```
+
+## 13 Variablen
 **Aufgabe:** Nennen Sie drei verschiedene Datentypen, die eine Variable haben kann.
 
 **Lösung:**
-1. **String** - Textdaten (z.B. `"Hello World"`)
-2. **Number** - Zahlen (z.B. `42`, `3.14`)
-3. **Boolean** - Wahrheitswerte (z.B. `true`, `false`)
+1. **String** – Textdaten (z.B. `"Hello World"`)
+2. **Number** – Zahlen (z.B. `42`, `3.14`)
+3. **Boolean** – Wahrheitswerte (z.B. `true`, `false`)
 
-## 12 Variablen
-**Aufgabe:** Was ist der Unterschied zwischen den folgenden 2 Variablen?
-
-```javascript
-let variable1 = 12;
-let variable2 = 12;
-```
-
-**Lösung:**
-- `let` erstellt eine Variable, deren Wert später geändert werden kann
-- Eine `const`-Deklaration wäre unveränderlich, wird hier aber nicht verwendet
-
-## 13 Variablen
+## 14 Variablen
 **Aufgabe:** Was gibt die Konsole bei folgendem Code aus?
 
 ```javascript
@@ -187,7 +193,7 @@ Die Konsole gibt **24** aus.
 - `x = 7 * 2 = 14`
 - `x = 14 + 10 = 24`
 
-## 14 Variablen
+## 15 Variablen
 **Aufgabe:** Was gibt die Konsole bei folgendem Code aus?
 
 ```javascript
@@ -205,3 +211,16 @@ Die Konsole gibt **20** aus.
 - `x = 20`, `y = 10`
 - `x = 20 / 2 = 10`
 - `x = 10 + 10 = 20`
+
+## 16 Variablen
+**Aufgabe:** Was gibt die Konsole bei folgendem Code aus?
+
+```javascript
+let a = "Guten";
+let b = " ";
+let c = "Morgen";
+console.log(a + b + c);
+```
+
+**Lösung:**
+Die Konsole gibt den String **"Guten Morgen"** aus.
