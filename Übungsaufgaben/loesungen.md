@@ -26,12 +26,14 @@ for (let i = 0; i < 8; i++) {
 **Lösung:**
 ```javascript
 function drawT(size) {
-    // obere Linie
+
+    // Nach oben zeichnen
     turtle.forward(size);
 
     // zur Mitte zurück und Stamm zeichnen
-    turtle.backward(size / 2);
-    turtle.right(90);
+    turtle.left(90);
+    turtle.forward(size / 2);
+    turtle.right(180);
     turtle.forward(size);
 }
 
