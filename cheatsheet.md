@@ -121,7 +121,7 @@ if(city != "stockholm") // city ist NICHT stockholm
 let myImage = document.querySelector("#image");
 
 // Gib mir das Objekt mit der id "image" - andere Methode
-let myImage = document.getElementById("image")
+let myImage = document.querySelector("image")
 
 // Setzte den Hintergrund des Bildes auf rot
 myImage.style.backgroundColor = "red";
