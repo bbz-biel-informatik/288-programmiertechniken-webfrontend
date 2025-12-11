@@ -64,22 +64,26 @@ Variablen sind Platzhalter für werte und können verändert werden.
 Variablen können folgende Typen haben:
 - <em>Zahlen</em>
 - <em>Texte</em>
-- <em>Objekte</em> (Zum Beispiel DOM Objekte)
-- <em>Listen</em>
+- <em>Objekte</em> (Zum Beispiel HTML Objekte)
 - <em>undefined / null<em>
 
 ```javascript
-let x = 1; // Variable definieren
-let pi = 3.141; // Konstante definieren
+let zahl = 1; // Zahl definieren
+let lieblingsfarbe = "blau"; // Text definieren
 
 // HTML Objekt direkt in einer Variable speichern.
 let myShip = document.querySelector("#myShip")
 
 // Variable verändern
-x = 2;
-
+zahl = 2;
 // Variable berechnen
-x = x + 1;
+let neueZahl = zahl + 10;
+
+// Berechnungen
+zahl + 10 // Addition
+zahl - 10 // Subtraktion
+zahl * 10 // Multiplikation
+zahl / 10 // Division
 ```
 
 ## Bedingungen
