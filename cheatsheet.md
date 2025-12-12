@@ -1,6 +1,7 @@
 # Cheatsheet Javascript
 
 ## Turtle
+
 ```javascript
 // Einfache Turtle Bewegungen
 turtle.forward(100);
@@ -12,6 +13,7 @@ turtle.right(90);
 ```
 
 ## Funktionen
+
 ```Javascript
 
 // Funktion definieren ohne Parameters
@@ -40,28 +42,31 @@ addition(100);
 ```
 
 ## Schleifen
+
 ```javascript
 // Einfache Schleife, die 10x Code ausführt
-for(let i = 0; i < 10; i++) {
-    console.log(i);
+for (let i = 0; i < 10; i++) {
+  console.log(i);
 }
 
 // Turtle Kreis
-for(let i = 0; i < 360; i++) {
-    turtle.forward(1);
-    turtle.right(1);
+for (let i = 0; i < 360; i++) {
+  turtle.forward(1);
+  turtle.right(1);
 }
 
 // Schleife, die die 5er Reihe auf der Konsole ausgibt
-for(let i = 1; i <= 10; i++) {
-    // Zähler i geht von 1 bis 10 und kann hier verwendet werden.
-    console.log(i * 5);
+for (let i = 1; i <= 10; i++) {
+  // Zähler i geht von 1 bis 10 und kann hier verwendet werden.
+  console.log(i * 5);
 }
 ```
 
 ## Variablen
+
 Variablen sind Platzhalter für werte und können verändert werden.
 Variablen können folgende Typen haben:
+
 - <em>Zahlen</em>
 - <em>Texte</em>
 - <em>Objekte</em> (Zum Beispiel HTML Objekte)
@@ -71,41 +76,43 @@ Variablen können folgende Typen haben:
 let zahl = 1; // Zahl definieren
 let lieblingsfarbe = "blau"; // Text definieren
 
-
 zahl = 2; // Variable verändern
 let neueZahl = zahl + 10; // Variable berechnen
 
 // Berechnungen
-zahl + 10 // Addition
-zahl - 10 // Subtraktion
-zahl * 10 // Multiplikation
-zahl / 10 // Division
+zahl + 10; // Addition
+zahl - 10; // Subtraktion
+zahl * 10; // Multiplikation
+zahl / 10; // Division
 ```
 
 ## Bedingungen
+
 ```javascript
 let year = 10;
 
 // Führt den Block aus, wenn das Jahr grösser oder gleich 2000 ist.
-if(year >= 2000) {
-    console.log("welcome to the 2000s")
+if (year >= 2000) {
+  console.log("welcome to the 2000s");
 }
 
 // Wenn das Jahr grösser als 2000 ist
-if(year >= 2000) {
-    console.log("welcome to the 2000s");
-// Sonst, wenn das Jahr aber grösser als 1990 ist.
-} else if(year >= 1990) {
-    console.log("welcome to the 90s!")
-// Sonst, wenn das Jahr grösser als 1980 ist.
-} else if(year >= 1980) {
-    console.log("welcome to the 80s!")
-// Sonst, wenn nichts von allem zutrifft
+if (year >= 2000) {
+  console.log("welcome to the 2000s");
+  // Sonst, wenn das Jahr aber grösser als 1990 ist.
+} else if (year >= 1990) {
+  console.log("welcome to the 90s!");
+  // Sonst, wenn das Jahr grösser als 1980 ist.
+} else if (year >= 1980) {
+  console.log("welcome to the 80s!");
+  // Sonst, wenn nichts von allem zutrifft
 } else {
-    console.log("Welcome to the 70s or before!")
+  console.log("Welcome to the 70s or before!");
 }
 ```
+
 ### Vergleiche
+
 ```javascript
 if(age > 20) // Grösser als 20
 if(age >= 20) // Grösser oder gleich wie 20
@@ -114,7 +121,9 @@ if(age <= 30) // Kleiner oder gleich wie 30
 if(city == "stockholm") // city ist genau 'stockholm'
 if(city != "stockholm") // city ist NICHT stockholm
 ```
+
 ## DOM (HTML) Manipulation
+
 ```javascript
 // Gib mir das Objekt mit der id "image"
 let myImage = document.querySelector("#image");
@@ -126,18 +135,18 @@ myImage.style.backgroundColor = "red";
 myImage.style.top = "200px";
 
 // Wenn auf das Bild geklickt wird
-myImage.addEventListener("click", function(event) {
+myImage.addEventListener("click", function (event) {
   // Setze einen schwarzen Ramen.
   bild.style.borderColor = "black";
-})
+});
 
 // Wenn eine Taste gedrückt wird
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   // Wenn auf "s" gedrückt wird
-  if(event.key == "s") {
+  if (event.key == "s") {
     console.log("you pressed s");
   }
-})
+});
 
 // Element löschen
 let myImage = document.querySelector("#myImage");
@@ -147,4 +156,3 @@ myImage.remove();
 let someElement = document.querySelector("#element");
 someElement.innerText = "Some text";
 ```
-
