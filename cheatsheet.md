@@ -25,18 +25,18 @@ function triangle() {
 }
 
 // Funktion definieren mit Parameter
-function addition(number1, number2) {
-    return number1 + number2;
-}
-
-function multiplikation(n1, n2) {
-    return n1 * n2;
+function triangle(size) {
+        turtle.forward(size);
+    turtle.right(120);
+    turtle.forward(size);
+    turtle.right(120);
+    turtle.forward(size);
+    turtle.right(120);
 }
 
 // Funktionen aufrufen
 triangle();
-addition(10, 5); // 15
-multiplikation(10, 5); // 50
+addition(100);
 ```
 
 ## Schleifen
@@ -71,13 +71,9 @@ Variablen können folgende Typen haben:
 let zahl = 1; // Zahl definieren
 let lieblingsfarbe = "blau"; // Text definieren
 
-// HTML Objekt direkt in einer Variable speichern.
-let myShip = document.querySelector("#myShip")
 
-// Variable verändern
-zahl = 2;
-// Variable berechnen
-let neueZahl = zahl + 10;
+zahl = 2; // Variable verändern
+let neueZahl = zahl + 10; // Variable berechnen
 
 // Berechnungen
 zahl + 10 // Addition
@@ -116,16 +112,12 @@ if(age >= 20) // Grösser oder gleich wie 20
 if(age < 30) // Kleiner als 30
 if(age <= 30) // Kleiner oder gleich wie 30
 if(city == "stockholm") // city ist genau 'stockholm'
-if(city === "stockholm") // dasselbe: city ist genau 'stockholm'
 if(city != "stockholm") // city ist NICHT stockholm
 ```
 ## DOM (HTML) Manipulation
 ```javascript
 // Gib mir das Objekt mit der id "image"
 let myImage = document.querySelector("#image");
-
-// Gib mir das Objekt mit der id "image" - andere Methode
-let myImage = document.querySelector("image")
 
 // Setzte den Hintergrund des Bildes auf rot
 myImage.style.backgroundColor = "red";
