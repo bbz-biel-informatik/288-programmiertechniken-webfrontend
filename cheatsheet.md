@@ -28,7 +28,7 @@ function triangle() {
 
 // Funktion definieren mit Parameter
 function triangle(size) {
-        turtle.forward(size);
+    turtle.forward(size);
     turtle.right(120);
     turtle.forward(size);
     turtle.right(120);
@@ -36,9 +36,10 @@ function triangle(size) {
     turtle.right(120);
 }
 
-// Funktionen aufrufen
+// Funktionen aufrufen (Ohne Parameter)
 triangle();
-addition(100);
+// Funktionen aufrufen (Mit Parameter)
+triangle(100);
 ```
 
 ## Schleifen
