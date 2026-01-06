@@ -1,0 +1,213 @@
+# BBZ Game Framework (v1)
+
+A lightweight, purely DOM-based JavaScript framework for 2D games. It provides helpers for input, collision detection, geometry, and basic timing, while relying on standard HTML elements (divs) for rendering.
+
+**Hosted at:** `https://jsgame.bbz.cloud/scripts/v1/`
+
+## Quick Start
+```html
+<!-- index.html -->
+<div class="playground">
+  <div class="player"></div>
+</div>
+
+<!-- Import required modules from the hosted framework -->
+<script src="https://jsgame.bbz.cloud/scripts/v1/keyboard.js"></script>
+<script src="https://jsgame.bbz.cloud/scripts/v1/collision.js"></script>
+
+```
+
+game.js 
+```javascript
+  const player = document.getElementById('player');
+  let x = 0;
+
+  function loop() {
+    if (keyboard(39)) { // Right Arrow
+      x += 5;
+      player.style.left = x + 'px';
+    }
+    requestAnimationFrame(loop);
+  }
+  loop();
+```
+game.css
+```css
+.playground {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 1px solid blue;
+}
+
+.player {
+  position: absolute;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+```
+
+## Golden Rules
+1.  **Strict API adherence**: The assistant **MUST** use only the framework API methods listed in the "Supported API" section below.
+2.  **Use Hosted Scripts**: The assistant **MUST** use the absolute URLs for scripts: `https://jsgame.bbz.cloud/scripts/v1/<filename>.js`.
+3.  **No external libraries**: The assistant **MUST NOT** use engines like Phaser, Pixi, Three.js, Matter.js, p5, or Unity.
+4.  **No direct Canvas**: The assistant **MUST NOT** uses `canvas.getContext` or `drawImage`. Usage of `requestAnimationFrame` is allowed for the game loop.
+5.  **Minimalism**: Keep code simple. Use the global functions provided.
+6.  **Separate files**: Javascript code is ALWAYS put into a seperate .js file. CSS is **ALWAYS** put into a seperate .css file.
+
+## Supported API
+
+### Global Helpers
+*   **`requestAnimationFrame(callback)`**
+    *   **Purpose**: Main game loop.
+    *   **Example**: `requestAnimationFrame(gameLoop);`
+
+### Input (Keyboard)
+**Source:** `https://jsgame.bbz.cloud/scripts/v1/keyboard.js`
+*   **`keyboard(keyCode)`**
+    *   **Purpose**: Check if a specific key is currently held down.
+    *   **Params**: `keyCode` (Number) - e.g., 37 (Left), 38 (Up), 39 (Right), 40 (Down), 32 (Space).
+    *   **Returns**: `Boolean` (true if down).
+*   **`keyboardOnce(keyCode)`**
+    *   **Purpose**: Check if a key was pressed (returns true only once per press).
+    *   **Params**: `keyCode` (Number).
+    *   **Returns**: `Boolean`.
+
+### Input (Mouse)
+**Source:** `https://jsgame.bbz.cloud/scripts/v1/mouse.js`
+*   **`bbzGameMouse.x`**: Current X position of the mouse (Number).
+*   **`bbzGameMouse.y`**: Current Y position of the mouse (Number).
+*   **`mousePositionX(playgroundElement)`**
+    *   **Purpose**: Get X position relative to a specific game container.
+    *   **Params**: `playgroundElement` (DOM Node).
+    *   **Returns**: `Number`.
+*   **`mousePositionY(playgroundElement)`**
+    *   **Purpose**: Get Y position relative to a specific game container.
+    *   **Params**: `playgroundElement` (DOM Node).
+    *   **Returns**: `Number`.
+*   **`mouseClick()`**
+    *   **Purpose**: Returns true if the left mouse button was clicked (consumes the event).
+    *   **Returns**: `Boolean`.
+*   **`mouseClickRight()`**
+    *   **Purpose**: Returns true if the right mouse button was clicked.
+    *   **Returns**: `Boolean`.
+
+### Collision
+**Source:** `https://jsgame.bbz.cloud/scripts/v1/collision.js`
+*   **`anyCollision(player, targets)`**
+    *   **Purpose**: Check if the `player` element overlaps with ANY element in the `targets` array.
+    *   **Params**: `player` (DOM Node), `targets` (Array of DOM Nodes).
+    *   **Returns**: `Boolean`.
+*   **`allCollisions(player, targets)` / `getCollisions(player, targets)`**
+    *   **Purpose**: specific elements from `targets` that overlap with `player`.
+    *   **Params**: `player` (DOM Node), `targets` (Array of DOM Nodes).
+    *   **Returns**: `Array` (of DOM Nodes).
+
+### Geometry
+**Source:** `https://jsgame.bbz.cloud/scripts/v1/geometry.js`
+*   **`distance(ax, ay, bx, by)`**
+    *   **Purpose**: Calculate distance between two points.
+    *   **Returns**: `Number`.
+*   **`angleDeg(cx, cy, ex, ey)`**
+    *   **Purpose**: Calculate angle in degrees between center `(cx, cy)` and target `(ex, ey)`.
+    *   **Returns**: `Number`.
+*   **`angleRad(cx, cy, ex, ey)`**
+    *   **Purpose**: Calculate angle in radians. Assumes Y is down (screen coordinates).
+    *   **Returns**: `Number`.
+
+### Timer
+**Source:** `https://jsgame.bbz.cloud/scripts/v1/timer.js`
+*   **`new Timer(interval)`**
+    *   **Purpose**: Create a simple frame-counter timer.
+    *   **Params**: `interval` (Number) - How many "ready" checks to wait.
+*   **`timer.ready()`**
+    *   **Purpose**: Increments internal counter. Returns true every `interval` calls.
+    *   **Returns**: `Boolean`.
+
+### Allowed DOM Methods (Rendering)
+Since there is no explicit render function, use these standard methods:
+*   `document.getElementById(id)` / `querySelector(selector)`
+*   `document.createElement(tagName)`
+*   `element.appendChild(child)`
+*   `element.remove()`
+*   `element.style.left` / `top` / `width` / `height` / `backgroundColor` / `transform`
+*   `element.classList.add/remove(className)`
+*   `element.innerHTML` (Use sparingly for text)
+
+---
+
+## Common Tasks
+
+### Basic Movement
+```javascript
+// Ensure scripts/v1/keyboard.js is imported
+// In your loop
+let speed = 5;
+let x = parseFloat(player.style.left || 0);
+let y = parseFloat(player.style.top || 0);
+
+if (keyboard(39)) x += speed; // Right
+if (keyboard(37)) x -= speed; // Left
+if (keyboard(40)) y += speed; // Down
+if (keyboard(38)) y -= speed; // Up
+
+player.style.left = x + 'px';
+player.style.top = y + 'px';
+```
+
+### Spawning an Enemy
+```javascript
+function spawnEnemy() {
+    let enemy = document.createElement('div');
+    enemy.classList.add('enemy'); // Defined in CSS
+    enemy.style.left = Math.random() * 800 + 'px';
+    enemy.style.top = '0px';
+    document.getElementById('playground').appendChild(enemy);
+    enemies.push(enemy); // Add to array for collision checks
+}
+```
+
+### Checking Collisions & Despawning
+```javascript
+// Ensure scripts/v1/collision.js is imported
+// Detect hits
+let hits = getCollisions(player, enemies);
+if (hits.length > 0) {
+    // Player hit an enemy
+    console.log("Game Over");
+}
+```
+
+### Shooting (Using Timer)
+```javascript
+// Ensure scripts/v1/timer.js is imported
+let shootTimer = new Timer(30); // Fire every 30 frames
+
+function loop() {
+    if (keyboard(32) && shootTimer.ready()) {
+         spawnBullet();
+    }
+    requestAnimationFrame(loop);
+}
+```
+
+---
+
+## Anti-patterns (Do not do this)
+
+1.  **Do NOT use Canvas**:
+    `const ctx = canvas.getContext('2d'); ctx.fillRect(...)` (Forbidden)
+2.  **Do NOT use `render()` from `render.js`**:
+    It requires Mustache templates which are not available. Use `createElement` instead.
+3.  **Do NOT use Class-based Game Objects**:
+    Do not strictly bind DOM elements to JS classes unless necessary. Keep state simple (variables + DOM).
+4.  **Do NOT use `setInterval` for the game loop**:
+    Use `requestAnimationFrame` and a recursive function.
+5.  **Do NOT import external physics**:
+    `import Matter from 'matter-js'` (Forbidden). Use `anyCollision` or simple math.
+
+---
+
+## When Unsure
+*   **Tilemaps**: No API provided. Say "Tilemaps are not supported; consider placing divs manually or with a loop."
